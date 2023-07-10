@@ -699,7 +699,7 @@ public class BranchService {
 This is a simple service class that has a public method `getActiveBranches`, which retrieves data from some data store, then applies a series of manipulations to the retrieved data before it returns it.
 
 Functional programming concepts applied in this class:
-- Preserving the **Immutability** of the branches list retrieved from the data store.
+- Preserving the **Immutability** of the `branches` list retrieved from the data store.
 - Creating a **Pure Function** `formatBranches` that accepts the list of branches and returns a new list with the desired transformations.
 - The `formatBranches` function is implemented in a **Declarative** manner, making use of **Higher-order functions**.
 
