@@ -80,11 +80,11 @@ Moving forward, we will use arrow functions to pass functions around in the code
 
 Pure functions are functions that have the following properties:
 1. They don't cause side effects to inputs or the global state.
-	- Making the code **Less prone to bugs**.
+    - Making the code **Less prone to bugs**.
 2. When called with the same input, they always return the same output (Referential transparency).
-	- Making the code **Predictable**, **Testable**, **Cacheable**.
+    - Making the code **Predictable**, **Testable**, **Cacheable**.
 3. They only depend on their input to produce the output.
-	- Making the code **Less prone to bugs**, **Testable**, **Composable**.
+    - Making the code **Less prone to bugs**, **Testable**, **Composable**.
 
 Let's see examples of impure functions violating each of these properties and then how to rewrite them to be pure.
 
@@ -365,7 +365,6 @@ const newPerson = {
 
 console.log(person); // { name: 'Mark' }
 console.log(newPerson); // { name: 'Mark', age: 13 }
-
 
 // Even better: Enforcing Object immutability using Object.freeze()
 const person = Object.freeze({
@@ -661,6 +660,32 @@ const lastNumberBiggerThanOne = findLast([4, 9, 5, 6, 2], number => number > 1);
 
 console.log(lastNumberBiggerThanOne); // 2
 ```
+
+Let's see a more real life example for applying different discounts to a shopping cart:
+
+```javascript
+const cartItems = [
+  { name: "Item 1", price: 10 },
+  { name: "Item 2", price: 20 },
+  { name: "Item 3", price: 30 },
+];
+
+function applyDiscount(item, discount) {
+  const discountedPrice = item.price - (item.price * discount);
+  return { ...item, price: discountedPrice }; // Copying the item object to another object and overriding the price value.
+}
+
+const regularDiscount = 0.1; // 10% discount.
+const specialDiscount = 0.5; // 50% discount.
+
+const regularCustomersCart = cartItems.map(item => applyDiscount(item, regularDiscount));
+const specialCustomersCart = cartItems.map(item => applyDiscount(item, specialDiscount));
+
+console.log(regularCustomersCart); // [{ name: "Item 1", price: 9 }, { name: "Item 2", price: 18 }, { name: "Item 3", price: 27 }]
+console.log(specialCustomersCart); // [{ name: "Item 1", price: 5 }, { name: "Item 2", price: 10 }, { name: "Item 3", price: 15 }]
+```
+
+Note how using higher-order functions also helps us achieve immutability, as the `map` function doesn't mutate `cartItems` since it is designed to be pure.
 
 As a final note, you may initially find yourself somewhat resistant to using higher-order functions in your code. It is understandable because all of us got introduced to loops first and became accustomed to using them. However, I can assure you that with little practice and commitment to using higher-order functions whenever possible, it will become second nature and you will start to appreciate their power and elegance.
 
