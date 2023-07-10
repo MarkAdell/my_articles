@@ -2,9 +2,9 @@
 
 In this article, we will explore the fundamental principles of functional programming that you can make use of in your day-to-day work, regardless of the programming language you use.
 
-There is a common misconception among beginners that one can only write pure functional programming code, or only adhere to other paradigms like OOP. This is not true. One of the beauties of functional programming is that you can make use of it in any programming paradigm you use, and it will not fail to make your code more maintainable. 
+There is a common misconception among beginners that one can only write pure functional programming code, or only adhere to other paradigms like OOP. This is not true. One of the beauties of functional programming is that you can make use of it in any programming paradigm you use, and it will not fail to make your code more maintainable.
 
-Towards the end of the article we will touch briefly on how we can make use of these concepts within object-oriented programming code.
+Towards the end of the article, we will touch briefly on how we can make use of these concepts within object-oriented programming code.
 
 I decided to use JavaScript for most of the code examples because of its concise syntax and native support for some of the functional programming building blocks, such as treating functions as first-class citizens. However, many high-level programming languages, including heavily object-oriented ones like Java and C#, have either been designed from the beginning or received updates over the years to provide better support for leveraging functional programming. Therefore, it is likely that you can apply everything we will talk about in this article in your preferred programming language.
 
@@ -42,7 +42,7 @@ console.log(evenNumbers); // [2, 4, 6, 8]
 
 As you can see, we are giving specific instructions on how to compute the desired result. We manually implemented the filtering logic by looping through the array and populating the `evenNumbers` array based on a condition.
 
-Now, let's see how we can achieve the same result using declarative code:
+Now, let's see how we can do the same thing using declarative code:
 
 ```javascript
 // Declarative approach
@@ -60,9 +60,9 @@ console.log(evenNumbers); // [2, 4, 6, 8]
 
 In the declarative approach, we described the desired outcome. We were like "Hey compiler, we want the `evenNumbers` array to hold the value of the `numbers` array after including even numbers only".
 
-For those unfamiliar with the `filter` function, we will get to that later in the article when we discuss higher-order functions. However, I bet that even if this is the first time you encounter the `filter` function, the code is self-descriptive as it reads like English, and this is the beauty of declarative code.
+For those unfamiliar with the `filter` function, we will get to that later in the article when we discuss higher-order functions. However, even if this is your first time encountering the `filter` function, you will likely understand what's happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
 
-We can make the code even more concise using arrow functions. Arrow functions provide a shorter syntax for creating function expressions and is supported in many programming languages, also knows as Lambda Expressions.
+We can make the code even more concise using arrow functions. Arrow functions provide a shorter syntax for creating function expressions and are supported in many programming languages, also known as Lambda Expressions.
 
 ```javascript
 // Declarative approach using arrow functions
@@ -74,19 +74,19 @@ const evenNumbers = numbers.filter(number => number % 2 === 0);
 console.log(evenNumbers); // [2, 4, 6, 8]
 ```
 
-Moving forward, we will use arrow functions for passing functions around in the code examples.
+Moving forward, we will use arrow functions to pass functions around in the code examples.
 
 ## Pure functions
 
 Pure functions are functions that have the following properties:
-1. They don't cause side effects to inputs or global state.
+1. They don't cause side effects to inputs or the global state.
 	- Making the code **Less prone to bugs**.
 2. When called with the same input, they always return the same output (Referential transparency).
 	- Making the code **Predictable**, **Testable**, **Cacheable**.
 3. They only depend on their input to produce the output.
 	- Making the code **Less prone to bugs**, **Testable**, **Composable**.
 
-Let's see examples of impure functions violating each these properties and then how to re-write them to be pure.
+Let's see examples of impure functions violating each of these properties and then how to rewrite them to be pure.
 
 ### A function that increments a number:
 
@@ -101,7 +101,7 @@ function incrementCounter() {
 
 incrementCounter();
 
-console.log(counter); // Output: 1
+console.log(counter); // 1
 ```
 
 The previous function is not pure because it causes side effects by modifying the `counter` variable (global state).
@@ -147,7 +147,7 @@ function sum(a, b) {
 
 By removing the `console.log`, the function no longer causes side effects. If you are so eager to greet the world, you can do it outside of this function.
 
-### A function that doubles the elements of an array of numbers:
+### A function that doubles the numbers of an array:
 
 ```javascript
 // Impure function #3
@@ -193,9 +193,9 @@ console.log(numbers) // [1, 2, 3, 4, 5]
 
 Instead of modifying the input, we created a new array `doubledNumbers` to store the updated values and returned it.
 
-Please note that if arrays are passed by value in the programming language you use, the step of creating a new array `doubledNumbers` to store the updated values will not be necessary, and it will be acceptable to modify the passed `numbers` array directly as it doesn't affect the original array.
+Please note that if arrays are passed by value in the programming language you use, the step of creating a new array `doubledNumbers` to store the updated values will not be necessary, and it will be acceptable to modify the passed `numbers` array directly and return it as it doesn't affect the original array.
 
-### A functions that decides based on the current day whether it is a weekend:
+### A function that decides based on the current day whether it is a weekend:
 
 ```javascript
 // Impure function #4
@@ -205,9 +205,9 @@ function isWeekend(weekendDays) {
     return weekendDays.includes(day);
 }
 
-const weekendDays = [0, 6]; // Sunday and Saturday
+const weekendDays = [0, 6]; // Sunday and Saturday.
 
-console.log(isWeekend(weekendDays)); // Might return true or false for the same input
+console.log(isWeekend(weekendDays)); // Might return true or false for the same input.
 ```
 
 The previous function is not pure because it doesn't always return the same output for the same input, this happened because it doesn't depend fully on its input to produce the output, instead, it also depends on the internally generated current day.
@@ -222,12 +222,12 @@ function isWeekend(day, weekendDays) {
 }
 
 const currentDay = new Date().getDay();
-const weekendDays = [0, 6]; // Sunday and Saturday
+const weekendDays = [0, 6]; // Sunday and Saturday.
 
-console.log(isWeekend(currentDay, weekendDays)); // true if given day is Sunday or Saturday, otherwise false
+console.log(isWeekend(currentDay, weekendDays)); // true if the given day is Sunday or Saturday, otherwise false.
 ```
 
-Instead of making the function generate the current day internally, we pass the day as a parameter. By making the output fully depend on the input, we are now sure that regardless of which day the function is called at, it will always return the same output for the same input.
+Instead of making the function generate the current day internally, we passed the day as a parameter. By making the output fully depend on the input, we are now sure that regardless of which day the function is called at, it will always returns the same output for the same input.
 
 ### A function that calculates an item price after applying a tax rate:
 
@@ -247,7 +247,7 @@ const totalPrice = calculateTotalAmount(itemPrice);
 console.log(totalPrice); // 110
 ```
 
-The previous function is not pure because it doesn't depend fully on the input to produce the output, instead, it depends also on an external variable `itemPrice`.
+The previous function is not pure because it doesn't depend fully on the input to produce the output, instead, it also depends on an external variable `itemPrice`.
 
 There is a catch here: the function is not impure just because it depends on an external variable. It is impure because this external variable can be modified (mutable), which means the function is not guaranteed to always return the same output for the same input.
 
@@ -288,17 +288,17 @@ const totalPrice = calculateTotalAmount(itemPrice);
 console.log(totalPrice); // 110
 ````
 
-By declaring `taxRate` with `const` instead of `let`, making it immutable, it is guaranteed that the function always returns the same output for the same input. However, it is advisable to use the first approach, which is passing the `taxRate` as a parameter, this makes the function more self-contained.
+By declaring `taxRate` with `const` instead of `let`, making it immutable, it is guaranteed that the function always returns the same output for the same input. However, it is advisable to use the first approach, which is passing the `taxRate` as a parameter, as this makes the function more self-contained.
 
 ### When to use Pure Functions
 
-Whenever possible! It's important to recognize that not all functions in real-world applications can be pure. Sometimes the whole purpose of a function is to do side effects or rely on external dependencies to return or compute a value, think of I/O operations. So, when should you use Pure Functions? Whenever you find yourself writing a function whose purpose is to perform a computation or transformation based on a value that you have, then it is a good candidate for a pure function.
+Whenever possible! It is important to recognize that not all functions in real-world applications can be pure. Sometimes the whole purpose of a function is to do side effects or rely on external dependencies to return or compute a value, think of I/O operations. So, when should you use Pure Functions? Whenever you find yourself writing a function whose purpose is to perform a computation or transformation based on a value that you have, then it is a good candidate for a pure function.
 
 ## Immutability
 
 Immutability is the practice of not modifying data entities after they are created. When a change is required, a new data entity is created to hold the modified data, while the original data entity remains unchanged.
 
-Immutability helps prevent bugs that arise when a developer assumes a data entity holds a specific value when, in reality, it has been changed elsewhere in the code.
+Immutability helps prevent bugs that arise when a developer assumes a data entity holds a specific value, when in reality, it has been changed elsewhere in the code.
 
 Depending on the programming language you use, there may or may not be a way to enforce immutability, by having support for immutable variables and data structures. This is why I referred to immutability as a "practice", as in some cases, it will be your responsibility to avoid direct mutation (modification) of data entities.
 
@@ -331,7 +331,7 @@ Please note that in JavaScript, the `const` keyword ensures that the variable ca
 ```javascript
 const numbers = [1, 2, 3];
 
-numbers.push(4); // This is allowed;
+numbers.push(4); // This is allowed.
 
 console.log(numbers); // [1, 2, 3, 4]
 
@@ -367,12 +367,12 @@ console.log(person); // { name: 'Mark' }
 console.log(newPerson); // { name: 'Mark', age: 13 }
 
 
-// Even better: Enforcing Object immutability using Object.freeze
+// Even better: Enforcing Object immutability using Object.freeze()
 const person = Object.freeze({
     name: 'Mark'
 });
 
-person.age = 13; // Fails silently
+person.age = 13; // Fails silently.
 
 console.log(person); // { name: 'Mark' }
 
@@ -384,23 +384,23 @@ const newPerson = {
 console.log(newPerson); // { name: 'Mark', age: 13 }
 ```
 
-I don't want to dive into more language-specific details as it is not the purpose of this article. The take away is, **enforce immutability when you can, otherwise, do your best following the practice of not mutating data entities**.
+I don't want to dive into more language-specific details as it is not the purpose of this article. The takeaway is, **enforce immutability when you can, otherwise, do your best following the practice of not mutating data entities**.
 
 It's worth mentioning that for many programming languages, there are either internal or external libraries that provide immutable data structures and utilities to achieve immutability. Some examples are:
-- [immutable](https://www.npmjs.com/package/immutable) for JavaScript
-- [pyrsistent](https://pypi.org/project/pyrsistent/) for Python
-- [eclipse-collections](https://github.com/eclipse/eclipse-collections) for Java
-- [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable/) for C#
+- [immutable](https://www.npmjs.com/package/immutable) for JavaScript.
+- [pyrsistent](https://pypi.org/project/pyrsistent/) for Python.
+- [eclipse-collections](https://github.com/eclipse/eclipse-collections) for Java.
+- [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable/) for C#.
 
-Immutability doesn't stop at variables and data structures. Sometimes, it's also useful to make our classes immutable, and it comes with its own benefits. As a final example (pun intended), let's see how we can build an immutable class in Java.
+Immutability doesn't stop at variables and data structures. Sometimes, it's also useful to make our classes immutable, and it comes with its own benefits. As a final example (pun intended), let's see how we can build an immutable class in Java:
 
 ```java
-final public class ImmutablePerson {
+final public class Person {
     private final String name;
     private final int age;
     private final List<String> hobbies;
 
-    public ImmutablePerson(String name, int age, List<String> hobbies) {
+    public Person(String name, int age, List<String> hobbies) {
         this.name = name;
         this.age = age;
         this.hobbies = Collections.unmodifiableList(hobbies);
@@ -423,16 +423,16 @@ final public class ImmutablePerson {
 Note the following class properties:
 - Class is declared as `final` to prevent inheritance.
 - Class fields are declared as `final` to make them immutable.
-- The hobbies list is made immutable by using `Collections.unmodifiableList()`.
+- The `hobbies` list is made immutable by using `Collections.unmodifiableList()`.
 - Class doesn't have any setter methods.
 
-Let's wrap things up here. Immutability is a broad topic, I hope I covered the basic fundamentals and made you curious to dive deeper.
+Let's wrap things up here. Immutability is a broad topic. I hope I covered the basic fundamentals and made you curious to dive deeper.
 
 ## First-class functions
 
-First-class functions refer to the ability of functions to be treated as values and manipulated just like any other data type. This means you can assign functions to variables, pass them as arguments to other functions, and even return them as values from other functions.
+First-class functions refer to the ability of functions to be treated as values. This means you can assign functions to variables, pass them as arguments to other functions, and return them as values from other functions.
 
-First-class functions serve as the foundation for techniques like higher-order functions, function composition in functional programming.
+First-class functions serve as the foundation for techniques like higher-order functions and function composition in functional programming.
 
 Let's see some examples:
 
@@ -468,11 +468,11 @@ const operation = getOperation('add');
 
 console.log(operation(3, 4)); // 7
 
-// We can also call it directly like this
+// We can also call it directly like this.
 console.log(getOperation('add')(3, 4)); // 7
 ```
 
-Now let's make the code more concise using arrow functions:
+Now, let's make the code more concise using arrow functions:
 
 ```javascript
 // Assigning functions to variables.
@@ -495,15 +495,15 @@ function getOperation(type) {
 console.log(getOperation('add')(3, 4)); // 7
 ````
 
-Now we are ready to move on to the last concept we'll explore today: Higher-order functions.
+We are ready now to move on to the last concept we'll explore today: Higher-order functions.
 
 ## Higher-order functions
 
 Higher-order functions are functions that can take one or more functions as arguments or return functions as their results.
 
-One of many benefits of higher-order functions is that they enable code reusability. Instead of writing similar logic, such as filtering, multiple times, you can encapsulate it in a higher-order function once and pass different functions as arguments to achieve different behaviors.
+One of several benefits of higher-order functions is that they enable code reusability. Instead of writing similar logic, such as filtering, multiple times, you can encapsulate it in a higher-order function once and pass different functions as arguments to achieve different behaviors.
 
-Many programming languages provide built-in higher-order functions for manipulating lists or collections without the need for loops. Making the code more concise, reusable and readable. Some of the common higher-order functions for list manipulation are:
+Many programming languages provide built-in higher-order functions for manipulating lists or collections without the need for loops. Making the code more concise, reusable, and readable. Some of the common higher-order functions for list manipulation are:
 - **Map**: Applies a given function to each list element, returning a new list with the transformed values.
 - **Filter**: Filters list elements based on a given predicate function, returning a new list with the filtered elements.
 - **Reduce**: Combines list elements into a single value using a given accumulator function, simplifying computations like summing or finding the maximum.
@@ -511,7 +511,7 @@ Many programming languages provide built-in higher-order functions for manipulat
 
 And the list goes on.
 
-Let's dive into some code examples and explain the benefits of using higher-order functions.
+Let's see code examples for filtering an array and explain the benefits of using higher-order functions:
 
 ```javascript
 // Using the iterative approach (imperative).
@@ -548,7 +548,7 @@ So every time we use the iterative, imperative approach, we lose most of these b
 - The risk of introducing bugs, because we implement the logic ourselves.
 - The risk of introducing time complexity issues, because we put together the algorithm ourselves.
 
-Now let's see some more examples of using the built-in JavaScript higher-order functions to get the feeling of them:
+Now, let's see some more examples of using the built-in JavaScript higher-order functions:
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6];
@@ -565,7 +565,7 @@ const initialValue = 0;
 const sum =  numbers.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue); // 21
 ```
 
-Remember when we said that higher order functions are pure and this gives us the benefits of pure functions? One of these benefits is composability, it means that we can safely compose these functions together, by letting the output of one function be the input of another function. This is made possible because pure functions always get an input and produce an output, and output only depends on input.
+Remember when we said that higher-order functions are pure and this gives us the benefits of pure functions? One of these benefits is composability, it means that we can safely compose these functions together, by letting the output of one function be the input of another function. This is made possible because pure functions always get an input and produce an output, and output only depends on the input.
 
 Let's write code that gets us the sum of odd numbers after multiplying each odd number by three:
 
@@ -580,9 +580,9 @@ const result = numbers
 console.log(result); // 27
 ```
 
-We chained the three functions to compute our desired result, the output of the `filter` becomes the input of the `map`, and the output of the `map` becomes the input of the `reduce`. Please note that chaining is one form of function composition.
+We chained the three functions to compute our desired result. The output of the `filter` becomes the input of the `map`, and the output of the `map` becomes the input of the `reduce`. Please note that chaining is one of the forms of function composition.
 
-Now to the fun part, let's see how we can implement these higher-order function ourselves. We will implement `map`, `filter`, `some` and `countOccurrences` doesn't have a built-in equivalent in JavaScript.
+Now to the fun part, let's see how we can implement these higher-order function ourselves. We will implement `map`, `filter`, `some`, and a bonus function called `countOccurrences` which doesn't have a built-in equivalent in JavaScript.
 
 ```javascript
 function map(array, callback) {
@@ -654,7 +654,7 @@ console.log(evenNumbersCount); // 2
 
 Please note how they are all implemented to be pure.
 
-Exercise time! Try to implement a higher-order function called `findLast` that accepts an array and a predicate function and returns the last element in the array that satisfies the given predicate, or undefined otherwise. This is how it would be used:
+Exercise time! Try to implement a higher-order function called `findLast` that accepts an array and a predicate function and returns the last element in the array that satisfies the given predicate, or `undefined` otherwise. This is how it will be used:
 
 ```javascript
 const lastNumberBiggerThanOne = findLast([4, 9, 5, 6, 2], number => number > 1);
@@ -662,11 +662,11 @@ const lastNumberBiggerThanOne = findLast([4, 9, 5, 6, 2], number => number > 1);
 console.log(lastNumberBiggerThanOne); // 2
 ```
 
-As a final note, you may initially find yourself somewhat resistant to using higher-order functions in your code. It is understandable because all of us got introduced to loops first and became accustomed to using them. However, I can assure you that with little practice and commitment to using higher-order functions whenever possible, it will become second nature and you will appreciate their power and elegance.
+As a final note, you may initially find yourself somewhat resistant to using higher-order functions in your code. It is understandable because all of us got introduced to loops first and became accustomed to using them. However, I can assure you that with little practice and commitment to using higher-order functions whenever possible, it will become second nature and you will start to appreciate their power and elegance.
 
 ## Can functional programming be used within OOP code?
 
-Definitely! You can make use of several functional programming concepts while writing object-oriented code, such as immutability, pure functions and higher-order functions.
+Definitely! You can make use of several functional programming concepts while writing object-oriented code, such as immutability, pure functions, and higher-order functions.
 
 Let's see a Java example where **all** the concepts we talked about in this article are applied:
 
@@ -696,16 +696,17 @@ public class BranchService {
 }
 ```
 
-This is a simple service class that has a public method `getActiveBranches`, which retrieves data from some data store, then applies a series of manipulations to the retrieved data then returns them.
+This is a simple service class that has a public method `getActiveBranches`, which retrieves data from some data store, then applies a series of manipulations to the retrieved data before it returns it.
 
 Functional programming concepts applied in this class:
 - Preserving the **Immutability** of the branches list retrieved from the data store.
-- Creating a **Pure Function** `formatBranches` that accepts the list of branches and returns a new list of branches with the desired transformations.
+- Creating a **Pure Function** `formatBranches` that accepts the list of branches and returns a new list with the desired transformations.
 - The `formatBranches` function is implemented in a **Declarative** manner, making use of **Higher-order functions**.
 
-There is still much more to learn about functional programming. Feel free to dive deeper into this beautiful paradigm. The aim of this article was to explain the basic principles that you can start applying today, leading to code that is more maintainable and resistant to bugs.
-
+There is still much more to learn about functional programming. Feel free to dive deeper into this beautiful paradigm. The aim of this article was to explain the basic principles that you can start applying today, making your code more maintainable and resistant to bugs.
 
 ## References
 - https://github.com/xgrommx/awesome-functional-programming
 - https://dzone.com/articles/about-immutability-in-object-oriented-programming
+- https://www.youtube.com/watch?v=0if71HOyVjY
+- https://www.youtube.com/watch?v=e-5obm1G_FY
