@@ -286,7 +286,7 @@ const itemPrice = 100;
 const totalPrice = calculateTotalAmount(itemPrice);
 
 console.log(totalPrice); // 110
-````
+```
 
 By declaring `taxRate` with `const` instead of `let`, making it immutable, it is guaranteed that the function always returns the same output for the same input. However, it is advisable to use the first approach, which is passing the `taxRate` as a parameter, as this makes the function more self-contained.
 
