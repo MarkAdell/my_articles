@@ -195,7 +195,7 @@ Instead of modifying the input, we created a new array `doubledNumbers` to store
 
 Please note that if arrays are passed by value in the programming language you use, the step of creating a new array `doubledNumbers` to store the updated values will not be necessary, and it will be acceptable to modify the passed `numbers` array directly and return it as it doesn't affect the original array.
 
-### A function that decides based on the current day whether it is a weekend:
+### A function that checks if the current day is a weekend:
 
 ```javascript
 // Impure function #4
@@ -510,7 +510,7 @@ Many programming languages provide built-in higher-order functions for manipulat
 
 And the list goes on.
 
-Let's see code examples for filtering an array and explain the benefits of using higher-order functions:
+Let's see a code example for filtering an array and explain the benefits of using higher-order functions:
 
 ```javascript
 // Using the iterative approach (imperative).
