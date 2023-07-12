@@ -492,7 +492,7 @@ function getOperation(type) {
 }
 
 console.log(getOperation('add')(3, 4)); // 7
-````
+```
 
 We are ready now to move on to the last concept we'll explore today: Higher-order functions.
 
