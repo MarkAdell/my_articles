@@ -247,7 +247,7 @@ const totalPrice = calculateTotalAmount(itemPrice);
 console.log(totalPrice); // 110
 ```
 
-The previous function is not pure because it doesn't depend fully on the input to produce the output, instead, it also depends on an external variable `itemPrice`.
+The previous function is not pure because it doesn't depend fully on the input to produce the output, instead, it also depends on an external variable `taxRate`.
 
 There is a catch here: the function is not impure just because it depends on an external variable. It is impure because this external variable can be modified (mutable), which means the function is not guaranteed to always return the same output for the same input.
 
@@ -479,11 +479,11 @@ const sum = (a, b) => a + b;
 
 console.log(sum(3, 4)); // 7
 
+// Passing functions as arguments to other functions.
 function calculate(operation, a, b) {
     return operation(a, b);
 }
 
-// Passing functions as arguments to other functions.
 console.log(calculate(sum, 3, 4)); // 7
 
 // Returning functions from other functions.
