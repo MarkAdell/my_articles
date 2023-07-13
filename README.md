@@ -685,7 +685,7 @@ console.log(regularCustomersCart); // [{ name: "Item 1", price: 9 }, { name: "It
 console.log(specialCustomersCart); // [{ name: "Item 1", price: 5 }, { name: "Item 2", price: 10 }, { name: "Item 3", price: 15 }]
 ```
 
-Note how using higher-order functions also helps us achieve immutability, as the `map` function doesn't mutate `cartItems` since it is designed to be pure.
+**It is important** to note that if `applyDiscount` mutates its input by modifying the item price directly, the map function will mutate the entire `cartItems` array, which we don't want. Therefore, it is crucial that the callbacks we pass to our higher-order functions are implemented to be pure.
 
 As a final note, you may initially find yourself somewhat resistant to using higher-order functions in your code. It is understandable because all of us got introduced to loops first and became accustomed to using them. However, I can assure you that with little practice and commitment to using higher-order functions whenever possible, it will become second nature and you will start to appreciate their power and elegance.
 
