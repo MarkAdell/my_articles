@@ -1,6 +1,6 @@
 # Yet another introduction to Functional Programming
 
-In this article, we will explore the fundamental principles of functional programming that you can make use of in your day-to-day work, regardless of the programming language you use.
+In this article, we will explore the fundamental principles of functional programming that you can utilize in your day-to-day work, regardless of the programming language you use.
 
 There is a common misconception among beginners that one can only write pure functional programming code, or only adhere to other paradigms like OOP. This is not true. One of the beauties of functional programming is that you can make use of it in any programming paradigm you use, and it will not fail to make your code more maintainable.
 
