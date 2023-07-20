@@ -536,18 +536,20 @@ const evenNumbers = numbers.filter(number => number % 2 === 0);
 console.log(evenNumbers); // [2, 4, 6, 8]
 ```
 
-We saw this example when we were explaining the difference between imperative and declarative code. Now, let's break down the benefits of writing this code using the `filter` higher-order function:
+Benefits of writing this code using the `filter` higher-order function:
 - It's more concise because we achieved the same task using fewer lines of code.
 - It's more readable because it's declarative, we describe **what** we want, not **how** to do it.
 - It's more reusable because the main filtering logic is implemented once inside the `filter` function, allowing it to be used for different filtering scenarios based on the filtering criteria we provide.
 - It's pure. Higher-order functions are often implemented to be pure, so we get all the nice benefits of pure functions.
 
 So every time we use the iterative, imperative approach, we lose most of these benefits, along with some added drawbacks, such as:
+- The risk of introducing bugs.
 - The risk of writing unreadable code.
-- The risk of introducing bugs, because we implement the logic ourselves.
-- The risk of introducing time complexity issues, because we put together the algorithm ourselves.
+- The risk of introducing performance issues.
 
-Now, let's see some more examples of using the built-in JavaScript higher-order functions:
+### Examples using higher-order functions
+
+Let's examples of using some of the built-in JavaScript higher-order functions:
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6];
@@ -564,6 +566,8 @@ const initialValue = 0;
 const sum =  numbers.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue); // 21
 ```
 
+### Composing higher-order functions
+
 Remember when we said that higher-order functions are pure and this gives us the benefits of pure functions? One of these benefits is composability, it means that we can safely compose these functions together, by letting the output of one function be the input of another function. This is made possible because pure functions always get an input and produce an output, and output only depends on the input.
 
 Let's write code that gets us the sum of odd numbers after multiplying each odd number by three:
@@ -579,7 +583,11 @@ const result = numbers
 console.log(result); // 27
 ```
 
-We chained the three functions to compute our desired result. The output of the `filter` becomes the input of the `map`, and the output of the `map` becomes the input of the `reduce`. Please note that chaining is one of the forms of function composition.
+We chained the three functions to compute our desired result. The output of the `filter` becomes the input of the `map`, and the output of the `map` becomes the input of the `reduce`.
+
+Please note that chaining is one form of function composition.
+
+### Implementing higher-order functions
 
 Now to the fun part, let's see how we can implement these higher-order function ourselves. We will implement `map`, `filter`, `some`, and a bonus function called `countOccurrences` which doesn't have a built-in equivalent in JavaScript.
 
@@ -653,6 +661,8 @@ console.log(evenNumbersCount); // 2
 
 Please note how they are all implemented to be pure.
 
+### Higher-order functions exercise
+
 Exercise time! Try to implement a higher-order function called `findLast` that accepts an array and a predicate function and returns the last element in the array that satisfies the given predicate, or `undefined` otherwise. This is how it will be used:
 
 ```javascript
@@ -661,7 +671,11 @@ const lastNumberBiggerThanOne = findLast([4, 9, 5, 6, 2], number => number > 1);
 console.log(lastNumberBiggerThanOne); // 2
 ```
 
-Let's see a more real life example for applying different discounts to a shopping cart:
+[Here](https://gist.github.com/MarkAdell/05afa2f6f873694c21eff85f49a9552d) is a possible solution to the exercise.
+
+### Higher-order functions real life example
+
+Let's see a more real life example for using higher-order functions, applying different discounts to a shopping cart:
 
 ```javascript
 const cartItems = [
