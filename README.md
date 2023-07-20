@@ -62,7 +62,7 @@ In the declarative approach, we described the desired outcome. We were like "Hey
 
 For those unfamiliar with the `filter` function, we will get to that later in the article when we discuss higher-order functions. However, even if this is your first time encountering the `filter` function, you will likely understand what's happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
 
-We can make the code even more concise using arrow functions. Arrow functions provide a shorter syntax for creating function expressions and are supported in many programming languages, also known as Lambda Expressions.
+We can make the code even more concise using [arrow functions](https://www.w3schools.com/js/js_arrow_function.asp). Arrow functions provide a shorter syntax for creating function expressions and are supported in many programming languages, also known as Lambda Expressions.
 
 ```javascript
 // Declarative approach using arrow functions
