@@ -744,6 +744,8 @@ Functional programming concepts applied in this class:
 
 There is still much more to learn about functional programming. Feel free to dive deeper into this beautiful paradigm. The aim of this article was to explain the basic principles that you can start applying today, making your code more maintainable and resistant to bugs.
 
+Please feel free to suggest updates to the article by opening issues in [this](https://github.com/MarkAdell/functional_programming_article/issues) repository.
+
 ## References
 - https://github.com/xgrommx/awesome-functional-programming
 - https://dzone.com/articles/about-immutability-in-object-oriented-programming
