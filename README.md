@@ -76,7 +76,7 @@ console.log(evenNumbers); // [2, 4, 6, 8]
 
 Moving forward, we will use arrow functions to pass functions around in the code examples.
 
-Let's see another example for:
+Let's see another example:
 
 ```javascript
 // Imperative approach
