@@ -42,7 +42,7 @@ console.log(evenNumbers); // [2, 4, 6, 8]
 
 As you can see, we are giving specific instructions on how to compute the desired result. We manually implemented the filtering logic by looping through the array and populating the `evenNumbers` array based on a condition.
 
-Now, let's see how to do it using declarative code:
+Now, let's see how to achieve the same result using declarative code:
 
 ```javascript
 // Declarative approach
@@ -51,16 +51,22 @@ function isEven(number) {
     return number % 2 === 0;
 }
 
+function filter(array, predicate) {
+  // implementation of the filtering logic
+}
+
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
-const evenNumbers = numbers.filter(isEven);
+const evenNumbers = filter(numbers, isEven); // <-- the declarative code
 
 console.log(evenNumbers); // [2, 4, 6, 8]
 ```
 
-In the declarative approach, we described the desired outcome. We were like "Hey compiler, we want the `evenNumbers` array to hold the value of the `numbers` array after including only even numbers".
+In the declarative approach, we described the desired outcome. We were like "Hey compiler, we want the `evenNumbers` array to hold the values of the `numbers` array but only including the even numbers".
 
-For those unfamiliar with the `filter` function, we will cover it later in the article when we discuss higher-order functions. However, even if this is your first time encountering the `filter` function, you will likely understand what's happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
+Even if you are unaware of the inner implementation of the `filter` function, you will likely understand what's happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
+
+Please note that many programming languages provide built-in functions like `filter`. We will cover this later in the article when we discuss higher-order functions.
 
 We can make the code even more concise using [arrow functions](https://www.w3schools.com/js/js_arrow_function.asp). Arrow functions provide a shorter syntax for creating function expressions and are supported in many programming languages, also known as *Lambda Expressions*.
 
