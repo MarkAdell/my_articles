@@ -303,9 +303,9 @@ Immutability helps prevent bugs that arise when a developer assumes a data entit
 Depending on the programming language you use, there may or may not be a way to enforce immutability, by having support for immutable variables and data structures. This is why I referred to immutability as a "practice", as in some cases, it will be your responsibility to avoid direct mutation (modification) of data entities.
 
 To achieve immutability, we can follow these general principles, regardless of the programming language we use:
-- Using constant variables if supported
-- Using immutable data structures if supported
-- Avoiding direct mutation to data entities
+- Using constant variables if supported.
+- Using immutable data structures if supported.
+- Avoiding direct mutation to data entities.
 
 Let's see some examples:
 
@@ -385,7 +385,7 @@ console.log(newPerson); // { name: 'Mark', age: 13 }
 
 I don't want to dive into more language-specific details as it is not the purpose of this article. The takeaway is, **enforce immutability when you can, otherwise, do your best following the practice of not mutating data entities**.
 
-It's worth mentioning that for many programming languages, there are either internal or external libraries that provide immutable data structures and utilities to achieve immutability. Some examples are:
+For many programming languages, there are either internal or external libraries that provide immutable data structures and utilities to achieve immutability. Some examples are:
 - [immutable](https://www.npmjs.com/package/immutable) for JavaScript.
 - [pyrsistent](https://pypi.org/project/pyrsistent/) for Python.
 - [eclipse-collections](https://github.com/eclipse/eclipse-collections) for Java.
@@ -425,7 +425,7 @@ Note the following class properties:
 - The `hobbies` list is made immutable by using `Collections.unmodifiableList()`.
 - Class doesn't have any setter methods.
 
-Let's wrap things up here. Immutability is a broad topic. I hope I covered the basic fundamentals and made you curious to dive deeper.
+Immutability is a broad topic. I hope I covered the basic fundamentals and made you curious to dive deeper.
 
 ## First-class functions
 
