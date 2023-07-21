@@ -42,7 +42,7 @@ console.log(evenNumbers); // [2, 4, 6, 8]
 
 As you can see, we are giving specific instructions on how to compute the desired result. We manually implemented the filtering logic by looping through the array and populating the `evenNumbers` array based on a condition.
 
-Now, let's see how do it using declarative code:
+Now, let's see how to do it using declarative code:
 
 ```javascript
 // Declarative approach
