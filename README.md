@@ -4,7 +4,7 @@ In this article, we will explore the fundamental principles of functional progra
 
 There is a common misconception among beginners that one can only write pure functional programming code, or only stick to other paradigms like OOP. This is not true. One of the beauties of functional programming is that you can make use of it in any programming paradigm you use, and it will not fail to make your code more maintainable.
 
-Towards the end of the article, we will touch briefly on how we can make use of these concepts within object-oriented programming code.
+Towards the end of the article, we will show an example on how we can make use of these concepts within object-oriented programming code.
 
 I decided to use JavaScript for most of the code examples because of its concise syntax and native support for some of the functional programming building blocks, such as treating functions as first-class citizens. However, many high-level programming languages, including heavily object-oriented ones like Java and C#, have either been designed from the beginning or received updates over the years to provide better support for leveraging functional programming. Therefore, it is likely that you can apply everything we will talk about in this article in your preferred programming language.
 
@@ -12,7 +12,7 @@ I decided to use JavaScript for most of the code examples because of its concise
 
 Functional Programming is a programming paradigm that promotes writing code in a **declarative** rather than imperative manner and utilizes concepts such as **pure functions**, **immutability**, and **higher-order functions**, leading to code that is more maintainable and less prone to bugs.
 
-We will explore each of these concepts, providing lots of code examples. So buckle up and let's dive in!
+We will explore each of these concepts, providing lots of code examples. Let's dive in!
 
 ## Imperative VS Declarative code
 
@@ -42,7 +42,7 @@ console.log(evenNumbers); // [2, 4, 6, 8]
 
 As you can see, we are giving specific instructions on how to compute the desired result. We manually implemented the filtering logic by looping through the array and populating the `evenNumbers` array based on a condition.
 
-Now, let's see how we can do the same thing using declarative code:
+Now, let's see how do it using declarative code:
 
 ```javascript
 // Declarative approach
@@ -58,9 +58,9 @@ const evenNumbers = numbers.filter(isEven);
 console.log(evenNumbers); // [2, 4, 6, 8]
 ```
 
-In the declarative approach, we described the desired outcome. We were like "Hey compiler, we want the `evenNumbers` array to hold the value of the `numbers` array after including even numbers only".
+In the declarative approach, we described the desired outcome. We were like "Hey compiler, we want the `evenNumbers` array to hold the value of the `numbers` array after including only even numbers".
 
-For those unfamiliar with the `filter` function, we will get to that later in the article when we discuss higher-order functions. However, even if this is your first time encountering the `filter` function, you will likely understand what's happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
+For those unfamiliar with the `filter` function, we will cover it later in the article when we discuss higher-order functions. However, even if this is your first time encountering the `filter` function, you will likely understand what's happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
 
 We can make the code even more concise using [arrow functions](https://www.w3schools.com/js/js_arrow_function.asp). Arrow functions provide a shorter syntax for creating function expressions and are supported in many programming languages, also known as *Lambda Expressions*.
 
@@ -76,7 +76,7 @@ console.log(evenNumbers); // [2, 4, 6, 8]
 
 Moving forward, we will use arrow functions to pass functions around in the code examples.
 
-Let's see another example:
+Let's see another example for:
 
 ```javascript
 // Imperative approach
@@ -163,6 +163,8 @@ The previous function is not pure as it causes side effects by logging something
 
 ```javascript
 // Pure function #2
+
+console.log('Hello world!');
 
 function sum(a, b) {
     return a + b;
@@ -251,7 +253,7 @@ const weekendDays = [0, 6]; // Sunday and Saturday.
 console.log(isWeekend(currentDay, weekendDays)); // true if the given day is Sunday or Saturday, otherwise false.
 ```
 
-Instead of making the function generate the current day internally, we passed the day as a parameter. By making the output fully depend on the input, we are now sure that regardless of which day the function is called at, it will always returns the same output for the same input.
+Instead of making the function generate the current day internally, we passed the day as a parameter. By making the output fully depend on the input, we are now sure that regardless of which day the function is called at, it will always return the same output for the same input.
 
 ### A function that calculates an item price after applying a tax rate:
 
@@ -480,7 +482,7 @@ function getOperation(type) {
         return function(a, b) {
             return a + b;
         }
-    } 
+    }
 
     return function(a, b) {
         return a - b;
