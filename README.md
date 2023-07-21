@@ -6,7 +6,9 @@ There is a common misconception among beginners that one can only write pure fun
 
 Towards the end of the article, we will show an example of how we can make use of these concepts within object-oriented programming code.
 
-I decided to use JavaScript for most of the code examples because of its concise syntax and native support for some of the functional programming building blocks, such as treating functions as first-class citizens. However, many high-level programming languages, including heavily object-oriented ones like Java and C#, have either been designed from the beginning or received updates over the years to provide better support for leveraging functional programming. Therefore, it is likely that you can apply everything we will talk about in this article in your preferred programming language.
+I decided to use JavaScript for most of the code examples because of its concise syntax and native support for some of the functional programming building blocks, such as treating functions as first-class citizens.
+
+Many high-level programming languages, including heavily object-oriented ones like Java and C#, have either been designed from the beginning or received updates over the years to provide better support for leveraging functional programming. Therefore, it is likely that you can apply everything we will talk about in this article in your preferred programming language.
 
 ## What is Functional Programming
 
