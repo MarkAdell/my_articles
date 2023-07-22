@@ -60,7 +60,7 @@ const evenNumbers = filter(numbers, isEven); // <-- the declarative code
 console.log(evenNumbers); // [2, 4, 6, 8]
 ```
 
-In the declarative approach, we described the desired outcome. We were like "Hey compiler, we want the `evenNumbers` array to hold the values of the `numbers` array but only including the even numbers".
+In the declarative approach, we described the desired outcome. We were like "Hey compiler, we want the `evenNumbers` array to hold the values of the `numbers` array after only including the even numbers".
 
 Even if you are unaware of the inner implementation of the `filter` function, you will likely understand what's happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
 
@@ -105,6 +105,8 @@ console.log(max); // 5
 ```
 
 ## Pure functions
+
+Pure functions are the heart of functional programming, and they play a fundamental role in applying other functional programming concepts.
 
 Pure functions are functions that have the following properties:
 1. They don't cause side effects to inputs or the global state.
