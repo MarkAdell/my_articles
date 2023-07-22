@@ -66,14 +66,18 @@ Even if you are unaware of the inner implementation of the `filter` function, yo
 
 Please note that many programming languages provide built-in functions like `filter`. We will cover this later in the article when we discuss higher-order functions.
 
-We can make the code even more concise using [arrow functions](https://www.w3schools.com/js/js_arrow_function.asp). Arrow functions provide a shorter syntax for creating function expressions and are supported in many programming languages, also known as *Lambda Expressions*.
+This is unrelated to functinal programming, but we can make the code more concise using [arrow functions](https://www.w3schools.com/js/js_arrow_function.asp). Arrow functions provide a shorter syntax for creating function expressions and are supported in many programming languages, also known as *Lambda Expressions*.
 
 ```javascript
 // Declarative approach using arrow functions
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
-const evenNumbers = numbers.filter(number => number % 2 === 0);
+function filter(array, predicate) {
+  // implementation of the filtering logic
+}
+
+const evenNumbers = filter(numbers, number => number % 2 === 0);
 
 console.log(evenNumbers); // [2, 4, 6, 8]
 ```
@@ -482,6 +486,16 @@ function calculate(operation, a, b) {
 
 console.log(calculate(sum, 3, 4)); // 7
 
+console.log(
+    calculate(function(a, b) {
+        return a * b
+    }, 3, 4)
+); // 12
+
+console.log(
+    calculate((a, b) => a - b, 3, 4)
+); // -1
+
 // Returning functions from other functions.
 function getOperation(type) {
     if (type === 'add') {
@@ -498,32 +512,6 @@ function getOperation(type) {
 const operation = getOperation('add');
 
 console.log(operation(3, 4)); // 7
-
-// We can also call it directly like this.
-console.log(getOperation('add')(3, 4)); // 7
-```
-
-Now, let's make the code more concise using arrow functions:
-
-```javascript
-// Assigning functions to variables.
-const sum = (a, b) => a + b;
-
-console.log(sum(3, 4)); // 7
-
-// Passing functions as arguments to other functions.
-function calculate(operation, a, b) {
-    return operation(a, b);
-}
-
-console.log(calculate(sum, 3, 4)); // 7
-
-// Returning functions from other functions.
-function getOperation(type) {
-    return type === 'add' ? (a, b) => a + b : (a, b) => a - b;
-}
-
-console.log(getOperation('add')(3, 4)); // 7
 ```
 
 We are ready now to move on to the last concept we'll explore today: Higher-order functions.
