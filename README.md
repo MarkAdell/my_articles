@@ -118,7 +118,7 @@ Pure functions are functions that have the following properties:
 
 Let's see examples of impure functions violating each of these properties and then how to rewrite them to be pure.
 
-### A function that increments a number:
+### Causing side effects #1:
 
 ```javascript
 // Impure function #1
@@ -154,7 +154,7 @@ console.log(counter); // 0
 
 Instead of modifying the global variable, we passed the counter as an input and returned the incremented value.
 
-### A function that sums two numbers:
+### Causing side effects #2:
 
 ```javascript
 // Impure function #2
@@ -179,7 +179,7 @@ function sum(a, b) {
 
 By removing the `console.log`, the function no longer causes side effects. If you are so eager to greet the world, you can do it outside of this function.
 
-### A function that doubles the numbers of an array:
+### Causing side effects #3:
 
 ```javascript
 // Impure function #3
@@ -227,7 +227,7 @@ Instead of modifying the input, we created a new array `doubledNumbers` to store
 
 Please note that if arrays are passed by value in the programming language you use, the step of creating a new array `doubledNumbers` to store the updated values will not be necessary, and it will be acceptable to modify the passed `numbers` array directly and return it as it doesn't affect the original array.
 
-### A function that checks if the current day is a weekend:
+### Not the same output for the same input:
 
 ```javascript
 // Impure function #4
@@ -261,7 +261,7 @@ console.log(isWeekend(currentDay, weekendDays)); // true if the given day is Sun
 
 Instead of making the function generate the current day internally, we passed the day as a parameter. By making the output fully depend on the input, we are now sure that regardless of which day the function is called at, it will always return the same output for the same input.
 
-### A function that calculates an item price after applying a tax rate:
+### Not fully depending on the input to produce output:
 
 ```javascript
 // Impure function #5
