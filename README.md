@@ -536,7 +536,7 @@ One of several benefits of higher-order functions is that they enable code reusa
 
 Many programming languages provide built-in higher-order functions for manipulating lists or collections without the need for loops. Making the code more concise, reusable, and readable. Some of the common higher-order functions for list manipulation are:
 - **Map**: Applies a given function to each list element, returning a new list with the transformed values.
-- **Filter**: Filters list elements based on a given predicate function, returning a new list with the filtered elements.
+- **Filter**: Filters list elements based on a given predicate function (a function that returns a bool), returning a new list with the filtered elements.
 - **Reduce**: Combines list elements into a single value using a given accumulator function, simplifying computations like summing or finding the maximum.
 - **Find**: Searches for a specific element in a list based on a given predicate function.
 
@@ -581,7 +581,7 @@ So every time we use the iterative, imperative approach, we lose most of these b
 
 ### Examples using higher-order functions
 
-Let's examples of using some of the built-in JavaScript higher-order functions:
+Let's see examples of using some of the built-in JavaScript higher-order functions:
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6];
@@ -624,11 +624,11 @@ Please note that chaining is one form of function composition.
 Now to the fun part, let's see how we can implement these higher-order function ourselves. We will implement `map`, `filter`, `some`, and a bonus function called `countOccurrences` which doesn't have a built-in equivalent in JavaScript.
 
 ```javascript
-function map(array, callback) {
+function map(array, mapper) {
   const result = [];
 
   for (let i = 0; i < array.length; i++) {
-    result.push(callback(array[i]));
+    result.push(mapper(array[i]));
   }
 
   return result;
