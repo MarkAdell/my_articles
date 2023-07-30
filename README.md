@@ -613,13 +613,13 @@ Now to the fun part, let's see how we can implement these higher-order function 
 
 ```javascript
 function map(array, mapper) {
-  const result = [];
+    const result = [];
 
-  for (let i = 0; i < array.length; i++) {
-    result.push(mapper(array[i]));
-  }
+    for (let i = 0; i < array.length; i++) {
+        result.push(mapper(array[i]));
+    }
 
-  return result;
+    return result;
 }
 
 const squaredNumbers = map([1, 2, 3, 4], number => number * number); 
@@ -629,15 +629,15 @@ console.log(squaredNumbers); // [1, 4, 9, 16]
 // ------------------------
 
 function filter(array, predicate) {
-  const result = [];
+    const result = [];
 
-  for (let i = 0; i < array.length; i++) {
-    if (predicate(array[i])) {
-      result.push(array[i]);
+    for (let i = 0; i < array.length; i++) {
+        if (predicate(array[i])) {
+            result.push(array[i]);
+        }
     }
-  }
 
-  return result;
+    return result;
 }
 
 const evenNumbers = filter([1, 2, 3, 4], number => number % 2 === 0);
@@ -647,13 +647,13 @@ console.log(evenNumbers); // [2, 4]
 // ------------------------
 
 function some(array, predicate) {
-  for (let i = 0; i < array.length; i++) {
-    if (predicate(array[i])) {
-      return true;
+    for (let i = 0; i < array.length; i++) {
+        if (predicate(array[i])) {
+            return true;
+        }
     }
-  }
 
-  return false;
+    return false;
 }
 
 const hasNegativeNumbers = some([-1, 0, 1, 2], number => number < 0);
@@ -699,14 +699,14 @@ Let's see a more real life example for using higher-order functions, applying di
 
 ```javascript
 const cartItems = [
-  { name: "Item 1", price: 10 },
-  { name: "Item 2", price: 20 },
-  { name: "Item 3", price: 30 },
+    { name: "Item 1", price: 10 },
+    { name: "Item 2", price: 20 },
+    { name: "Item 3", price: 30 },
 ];
 
 function applyDiscount(item, discount) {
-  const discountedPrice = item.price - (item.price * discount);
-  return { ...item, price: discountedPrice }; // Copying the item object to another object and overriding the price value.
+    const discountedPrice = item.price - (item.price * discount);
+    return { ...item, price: discountedPrice }; // Copying the item object to another object and overriding the price value.
 }
 
 const regularDiscount = 0.1; // 10% discount.
