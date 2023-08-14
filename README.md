@@ -66,7 +66,7 @@ Even if you are unaware of the inner implementation of the `filter` function, yo
 
 Please note that many programming languages provide built-in functions like `filter`. We will cover this later in the article when we discuss higher-order functions.
 
-This is unrelated to functinal programming, but we can make the code more concise using [arrow functions](https://www.w3schools.com/js/js_arrow_function.asp). Arrow functions provide a shorter syntax for creating function expressions and are supported in many programming languages, also known as *Lambda Expressions*.
+This is unrelated to functional programming, but we can make the code more concise using [arrow functions](https://www.w3schools.com/js/js_arrow_function.asp). Arrow functions provide a shorter syntax for creating function expressions and are supported in many programming languages, also known as *Lambda Expressions*.
 
 ```javascript
 // Declarative approach using arrow functions
