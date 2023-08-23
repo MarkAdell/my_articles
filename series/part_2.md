@@ -1,6 +1,6 @@
 # Yet another introduction to Functional Programming (Part Two)
 
-Welcome to the second part of our series of articles on Functional Programming. In the previous part, we gave an introduction and we discussed imperative and declarative code. In this part, we will be exploring Pure Functions.
+Welcome to the second part of our series of articles on Functional Programming. In the previous part, we gave an introduction and we discussed imperative vs declarative code. In this part, we will explore Pure Functions.
 
 Be sure to check our previous parts:
 
