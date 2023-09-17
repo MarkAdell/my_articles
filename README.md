@@ -461,7 +461,7 @@ Note the following class properties:
 - The `hobbies` list is made immutable by using `Collections.unmodifiableList()`.
 - Class doesn't have any setter methods.
 
-Immutability is a broad topic. I hope I covered the basic fundamentals and made you curious to dive deeper.
+Immutability is a broad topic. We covered its basic fundamentals, and I hope I have made you curious to dive deeper.
 
 ## First-class functions
 
