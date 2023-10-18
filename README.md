@@ -238,7 +238,7 @@ Please note that if arrays are passed by value in the programming language you u
 
 function isWeekend(weekendDays) {
     const currentDay = new Date().getDay();
-    return weekendDays.includes(day);
+    return weekendDays.includes(currentDay);
 }
 
 const weekendDays = [0, 6]; // Sunday and Saturday.
