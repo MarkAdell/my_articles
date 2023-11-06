@@ -2,7 +2,7 @@
 
 In these series of articles, we will explore the fundamental principles of functional programming that you can utilize in your day-to-day work, regardless of the programming language you use.
 
-There is a common misconception among beginners that one can only write pure functional programming code, or only stick to other paradigms like OOP. This is not true. One of the beauties of functional programming is that you can make use of it in any programming paradigm you use, and it will not fail to make your code more maintainable. And towards the end of the article, we will show an example of how we can utilize these concepts within object-oriented programming code.
+There is a common misconception among beginners that one can only write pure functional programming code, or only stick to other paradigms like OOP. This is not true. One of the beauties of functional programming is that you can make use of it in any programming paradigm you use, and it will not fail to make your code more maintainable. And in the last article, we will show an example of how we can utilize these concepts within object-oriented programming code.
 
 We decided to use JavaScript for most of the code examples because of its concise syntax and native support for some of the functional programming building blocks, such as treating functions as first-class citizens. However, it is likely that you can apply everything we will cover in your preferred programming language.
 
