@@ -49,7 +49,9 @@ function incrementCounter(counter) {
     return counter + 1;
 }
 
-console.log(incrementCounter(counter)); // 1
+let incrementedCounter = incrementCounter(counter);
+
+console.log(incrementedCounter); // 1
 
 console.log(counter); // 0
 ```
@@ -109,13 +111,13 @@ Refactored into a pure function:
 const numbers = [1, 2, 3, 4, 5];
 
 function doubleNumbers(numbers) {
-    const doubledNumbers = [];
+    const result = [];
 
     for (let i = 0; i < numbers.length; i++) {
-        doubledNumbers.push(2 * numbers[i]);
+        result.push(2 * numbers[i]);
     }
 
-    return doubledNumbers;
+    return result;
 }
 
 const doubledNumbers = doubleNumbers(numbers);
@@ -125,9 +127,9 @@ console.log(doubledNumbers) // [2, 4, 6, 8, 10]
 console.log(numbers) // [1, 2, 3, 4, 5]
 ```
 
-Instead of modifying the input, we created a new array `doubledNumbers` to store the updated values and returned it.
+Instead of modifying the input, we created a new array `result` to store the updated values and returned it.
 
-Please note that if arrays are passed by value in the programming language you use, the step of creating a new array `doubledNumbers` to store the updated values will not be necessary, and it will be acceptable to modify the passed `numbers` array directly and return it as it doesn't affect the original array.
+Please note that if arrays are passed by value in the programming language you use, it will be acceptable to modify the passed `numbers` array directly and return it, the function will be pure as it doesn't affect the original array.
 
 ### Not the same output for the same input:
 
@@ -161,7 +163,7 @@ const weekendDays = [0, 6]; // Sunday and Saturday.
 console.log(isWeekend(currentDay, weekendDays)); // true if the given day is Sunday or Saturday, otherwise false.
 ```
 
-Instead of making the function generate the current day internally, we passed the day as a parameter. By making the output fully depend on the input, we are now sure that regardless of which day the function is called at, it will always return the same output for the same input.
+Instead of making the function generate the current day internally, we passed the day as a parameter. By making the output fully depend on the input, we are now sure the function will always return the same output for the same input.
 
 ### Not fully depending on the input to produce output:
 
@@ -183,7 +185,7 @@ console.log(totalPrice); // 110
 
 The previous function is not pure because it doesn't depend fully on the input to produce the output, instead, it also depends on an external variable `taxRate`.
 
-There is a catch here: the function is not impure just because it depends on an external variable. It is impure because this external variable can be modified (mutable), which means the function is not guaranteed to always return the same output for the same input.
+There is a catch here, the function is not impure just because it depends on an external variable. It is impure because this external variable can be modified at anytime, which means the function is not guaranteed to always return the same output for the same input.
 
 Refactored into a pure function:
 

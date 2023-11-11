@@ -57,7 +57,7 @@ This is a case where it will be your responsibility to follow the "practice" of 
 const numbers = [1, 2, 3];
 
 // Creating a new array by copying the old array and adding the new element 4.
-const newNumbers = [...numbers, 4]; 
+const newNumbers = [...numbers, 4];
 
 console.log(numbers); // [1, 2, 3]
 console.log(newNumbers); // [1, 2, 3, 4]
@@ -104,7 +104,7 @@ For many programming languages, there are either internal or external libraries 
 - [eclipse-collections](https://github.com/eclipse/eclipse-collections) for Java.
 - [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable/) for C#.
 
-Immutability doesn't stop at variables and data structures. Sometimes, it's also useful to make our classes immutable, and it comes with its own benefits. As a final example (pun intended), let's see how we can build an immutable class in Java:
+Immutability doesn't stop at variables and data structures. Sometimes, it's also useful to make our classes immutable, such as Data Transfer Objects (DTOs), and it comes with its own benefits. As a final example (pun intended), let's see how we can build an immutable class in Java:
 
 ```java
 final public class Person {

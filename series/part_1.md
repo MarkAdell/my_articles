@@ -4,7 +4,7 @@ In these series of articles, we will explore the fundamental principles of funct
 
 There is a common misconception among beginners that one can only write pure functional programming code, or only stick to other paradigms like OOP. This is not true. One of the beauties of functional programming is that you can make use of it in any programming paradigm you use, and it will not fail to make your code more maintainable. And in the last article, we will show an example of how we can utilize these concepts within object-oriented programming code.
 
-We decided to use JavaScript for most of the code examples because of its concise syntax and native support for some of the functional programming building blocks, such as treating functions as first-class citizens. However, it is likely that you can apply everything we will cover in your preferred programming language.
+I decided to use JavaScript for most of the code examples because of its concise syntax and native support for some of the functional programming building blocks, such as treating functions as first-class citizens. However, it is likely that you can apply everything we will cover here in your preferred programming language.
 
 ## What is Functional Programming
 
@@ -62,7 +62,7 @@ console.log(evenNumbers); // [2, 4, 6, 8]
 
 In the declarative approach, we described the desired outcome. We were like "Hey compiler, we want the `evenNumbers` array to hold the values of the `numbers` array after only including the even numbers".
 
-Even if you are unaware of the inner implementation of the `filter` function, you will likely understand what's happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
+Even if you are unaware of the inner implementation of the `filter` function, you will likely understand what is happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
 
 Please note that many programming languages provide built-in functions like `filter`. We will cover this later in the article when we discuss higher-order functions.
 
@@ -94,7 +94,9 @@ const numbers = [1, 2, 3, 4, 5];
 let max = numbers[0];
 
 for (let i = 1; i < numbers.length; i++) {
-    max = numbers[i] > max ? numbers[i] : max;
+    if (numbers[i] > max) {
+        max = numbers[i];
+    }
 }
 
 console.log(max); // 5

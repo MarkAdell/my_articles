@@ -4,7 +4,7 @@ In this article, we will explore the fundamental principles of functional progra
 
 There is a common misconception among beginners that one can only write pure functional programming code, or only stick to other paradigms like OOP. This is not true. One of the beauties of functional programming is that you can make use of it in any programming paradigm you use, and it will not fail to make your code more maintainable. And towards the end of the article, we will show an example of how we can utilize these concepts within object-oriented programming code.
 
-I decided to use JavaScript for most of the code examples because of its concise syntax and native support for some of the functional programming building blocks, such as treating functions as first-class citizens. However, it is likely that you can apply everything we will cover in your preferred programming language.
+I decided to use JavaScript for most of the code examples because of its concise syntax and native support for some of the functional programming building blocks, such as treating functions as first-class citizens. However, it is likely that you can apply everything we will cover here in your preferred programming language.
 
 ## What is Functional Programming
 
@@ -62,7 +62,7 @@ console.log(evenNumbers); // [2, 4, 6, 8]
 
 In the declarative approach, we described the desired outcome. We were like "Hey compiler, we want the `evenNumbers` array to hold the values of the `numbers` array after only including the even numbers".
 
-Even if you are unaware of the inner implementation of the `filter` function, you will likely understand what's happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
+Even if you are unaware of the inner implementation of the `filter` function, you will likely understand what is happening as the code is self-descriptive and reads like English. And this is the beauty of declarative code.
 
 Please note that many programming languages provide built-in functions like `filter`. We will cover this later in the article when we discuss higher-order functions.
 
@@ -94,7 +94,9 @@ const numbers = [1, 2, 3, 4, 5];
 let max = numbers[0];
 
 for (let i = 1; i < numbers.length; i++) {
-    max = numbers[i] > max ? numbers[i] : max;
+    if (numbers[i] > max) {
+        max = numbers[i];
+    }
 }
 
 console.log(max); // 5
@@ -151,7 +153,9 @@ function incrementCounter(counter) {
     return counter + 1;
 }
 
-console.log(incrementCounter(counter)); // 1
+let incrementedCounter = incrementCounter(counter);
+
+console.log(incrementedCounter); // 1
 
 console.log(counter); // 0
 ```
@@ -201,7 +205,7 @@ doubleNumbers(numbers);
 console.log(numbers) // [2, 4, 6, 8, 10]
 ```
 
-The previous function is not pure because it causes side effects by modifying its input parameter.
+The previous function is not pure because it causes side effects by modifying its input.
 
 Refactored into a pure function:
 
@@ -211,13 +215,13 @@ Refactored into a pure function:
 const numbers = [1, 2, 3, 4, 5];
 
 function doubleNumbers(numbers) {
-    const doubledNumbers = [];
+    const result = [];
 
     for (let i = 0; i < numbers.length; i++) {
-        doubledNumbers.push(2 * numbers[i]);
+        result.push(2 * numbers[i]);
     }
 
-    return doubledNumbers;
+    return result;
 }
 
 const doubledNumbers = doubleNumbers(numbers);
@@ -227,9 +231,9 @@ console.log(doubledNumbers) // [2, 4, 6, 8, 10]
 console.log(numbers) // [1, 2, 3, 4, 5]
 ```
 
-Instead of modifying the input, we created a new array `doubledNumbers` to store the updated values and returned it.
+Instead of modifying the input, we created a new array `result` to store the updated values and returned it.
 
-Please note that if arrays are passed by value in the programming language you use, the step of creating a new array `doubledNumbers` to store the updated values will not be necessary, and it will be acceptable to modify the passed `numbers` array directly and return it as it doesn't affect the original array.
+Please note that if arrays are passed by value in the programming language you use, it will be acceptable to modify the passed `numbers` array directly and return it, the function will be pure as it doesn't affect the original array.
 
 ### Not the same output for the same input:
 
@@ -263,7 +267,7 @@ const weekendDays = [0, 6]; // Sunday and Saturday.
 console.log(isWeekend(currentDay, weekendDays)); // true if the given day is Sunday or Saturday, otherwise false.
 ```
 
-Instead of making the function generate the current day internally, we passed the day as a parameter. By making the output fully depend on the input, we are now sure that regardless of which day the function is called at, it will always return the same output for the same input.
+Instead of making the function generate the day internally, we passed it as a parameter. By making the output fully depend on the input, we are now sure that the function will always return the same output for the same input.
 
 ### Not fully depending on the input to produce output:
 
@@ -285,7 +289,7 @@ console.log(totalPrice); // 110
 
 The previous function is not pure because it doesn't depend fully on the input to produce the output, instead, it also depends on an external variable `taxRate`.
 
-There is a catch here: the function is not impure just because it depends on an external variable. It is impure because this external variable can be modified (mutable), which means the function is not guaranteed to always return the same output for the same input.
+There is a catch here, the function is not impure just because it depends on an external variable. It is impure because this external variable can be modified at anytime, which means the function is not guaranteed to always return the same output for the same input.
 
 Refactored into a pure function:
 
@@ -380,7 +384,7 @@ This is a case where it will be your responsibility to follow the "practice" of 
 const numbers = [1, 2, 3];
 
 // Creating a new array by copying the old array and adding the new element 4.
-const newNumbers = [...numbers, 4]; 
+const newNumbers = [...numbers, 4];
 
 console.log(numbers); // [1, 2, 3]
 console.log(newNumbers); // [1, 2, 3, 4]
@@ -427,7 +431,7 @@ For many programming languages, there are either internal or external libraries 
 - [eclipse-collections](https://github.com/eclipse/eclipse-collections) for Java.
 - [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable/) for C#.
 
-Immutability doesn't stop at variables and data structures. Sometimes, it's also useful to make our classes immutable, and it comes with its own benefits. As a final example (pun intended), let's see how we can build an immutable class in Java:
+Immutability doesn't stop at variables and data structures. Sometimes, it's also useful to make our classes immutable, such as Data Transfer Objects (DTOs), and it comes with its own benefits. As a final example (pun intended), let's see how we can build an immutable class in Java:
 
 ```java
 final public class Person {
