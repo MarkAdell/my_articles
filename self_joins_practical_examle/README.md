@@ -24,11 +24,11 @@ Following is a sample of the `customer_events` table:
 | 6 | 50 | added_items_to_basket | 2023-01-01 15:00:00 |
 | 7 | 60 | added_items_to_basket | 2023-01-01 16:30:00 |
 
-We have events from 5 customers. Only the `customer_id` of `40` added items to their basket and then created an order. The others did not, so we want to retrieve these customers to send them a push notification.
+We have events from 5 customers. Only the `customer_id` of `40` added items to their basket and then created an order. The others did not, so we want to retrieve these customers to send them a push notification, which are `customer_id` of `30`, `50`, and `60`.
 
 Before writing non-straightforward SQL queries, I like to use plain text to describe exactly what I want to achieve, in a way that would help me translate that into the query. Let's see what I would write for our case:
 
-"I want to retrieve all customer ids that their `event_type` is `'added_items_to_basket'` and their `event_timestamp` is one or more hours ago, excluding those where there exists a row with the same `customer_id` and `event_name` = `'created_order'` and a greater `event_timestamp`"
+"I want to retrieve customer IDs that their `event_type` is `'added_items_to_basket'` and their `event_timestamp` is one or more hours ago, excluding those for whom there exists a row with the same `customer_id` and `event_name` = `'created_order'` and a greater `event_timestamp`"
 
 Let's start with the easy part of the query, which is selecting all customers who added items to their basket at least one hour ago:
 
