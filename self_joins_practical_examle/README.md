@@ -56,7 +56,7 @@ LEFT JOIN
     AND b.event_timestamp > a.event_timestamp
 WHERE
     a.event_type = 'added_items_to_basket'
-    AND EXTRACT(HOUR FROM (NOW() - a.event_timestamp)) > 1
+    AND EXTRACT(HOUR FROM (NOW() - a.event_timestamp)) >= 1
     AND b.customer_id IS NULL;
 ```
 
@@ -89,7 +89,7 @@ FROM
     customer_events a
 WHERE
     a.event_type = 'added_items_to_basket'
-    AND EXTRACT(HOUR FROM (NOW() - a.event_timestamp)) > 1
+    AND EXTRACT(HOUR FROM (NOW() - a.event_timestamp)) >= 1
     AND NOT EXISTS (
         SELECT 1
         FROM customer_events b
