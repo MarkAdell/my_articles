@@ -1,12 +1,12 @@
-# A practical example of using SQL self joins
+# A Practical Example of Using SQL Self Joins
 
-## The Problem
+## Problem
 
 In this article, I am going to share a scenario that I recently faced at work and made use of SQL self joins.
 
 Our company operates a food ordering app. We noticed that some customers add items to their basket, and for one or more hours, do not proceed to create an order. To address this, we decided to send these customers a push notification to encourage them to complete the ordering process. And that was my task. In this article, we will focus on how to retrieve these customers.
 
-## The Solution
+## Solution
 
 We have a relational table called `customer_events` where we store various events created by our app customers, such as: `'opened_app'`, `'added_items_to_basket'`, `'created_order'`, `'closed_app'`, and so on.
 
