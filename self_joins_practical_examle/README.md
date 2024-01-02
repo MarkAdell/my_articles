@@ -26,9 +26,9 @@ Following is a sample of the `customer_events` table:
 
 We have events from 5 customers. Only the `customer_id` of `40` added items to their basket and then created an order. The others did not, so we want to retrieve these customers to send them a push notification.
 
-One thing I like to do before writing non-straightforward SQL queries, is to write in plain text what exactly I want to achieve, in a way that would help me translate that into the query. Let's see what I would write for our case:
+Before writing non-straightforward SQL queries, I like to use plain text to describe exactly what I want to achieve, in a way that would help me translate that into the query. Let's see what I would write for our case:
 
-"I want to retrieve all customer ids where their `event_type` is `'added_items_to_basket'` and their `event_timestamp` is one or more hours ago, excluding those where there are rows with the same `customer_id` and `event_name` = `'created_order'` and a greater `event_timestamp`"
+"I want to retrieve all customer ids that their `event_type` is `'added_items_to_basket'` and their `event_timestamp` is one or more hours ago, excluding those where there are rows with the same `customer_id` and `event_name` = `'created_order'` and a greater `event_timestamp`"
 
 Let's start with the easy part of the query, which is selecting all customers who added items to their basket at least one hour ago:
 
@@ -64,9 +64,9 @@ To the untrained eye, this query might look intimidating, but it's actually quit
 
 We performed a LEFT JOIN on the `customer_events` table (a) with itself (b). This retrieves all rows from the left table (a) along with their matching rows from the right table (b) based on the specified join conditions.
 
-Rows from the right table (b) will have `NULL` values for unmatched rows, meaning that there are no subsequent `'created_order'` events for the same customer. We want to include these rows only, and that is what the `b.customer_id IS NULL` condition does.
+Rows from the right table (b) will have `NULL` values for unmatched rows, meaning that there are no subsequent `'created_order'` events for the same customer. We want to include these rows only and exclude the rest, and that is what the `b.customer_id IS NULL` condition does.
 
-Query output:
+Query Output:
 
 | customer_id |
 |-------------|
@@ -74,7 +74,7 @@ Query output:
 | 50 |
 | 60 |
 
-If you are still unsure what the output of the self join looks like before filtering using `b.customer_id IS NULL`, you may run [this](https://www.db-fiddle.com/f/kDT86yJQYvF5YeDHSYTgvH/3) example I prepared for you on [db-fiddle](https://www.db-fiddle.com/).
+If you are not sure what the output of the self join looks like before filtering using `b.customer_id IS NULL`, you may run [this](https://www.db-fiddle.com/f/kDT86yJQYvF5YeDHSYTgvH/4) example I prepared on [db-fiddle](https://www.db-fiddle.com/).
 
 Now, I want you to go back and read the plain text we wrote for this query, and then check the query again. You will find that it does exactly what we described.
 
