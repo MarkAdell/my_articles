@@ -4,9 +4,9 @@ Welcome to the fourth part of our series of articles on Functional Programming. 
 
 Be sure to check our previous parts:
 
-- [Yet another introduction to Functional Programming (Part One)](https://github.com/MarkAdell/functional_programming_article/blob/main/series/part_1.md)
-- [Yet another introduction to Functional Programming (Part Two)](https://github.com/MarkAdell/functional_programming_article/blob/main/series/part_2.md)
-- [Yet another introduction to Functional Programming (Part Three)](https://github.com/MarkAdell/functional_programming_article/blob/main/series/part_3.md)
+- [Yet another introduction to Functional Programming (Part One)](https://github.com/MarkAdell/my_articles/blob/main/intro_to_functional_programming/series/part_1.md)
+- [Yet another introduction to Functional Programming (Part Two)](https://github.com/MarkAdell/my_articles/blob/main/intro_to_functional_programming/series/part_2.md)
+- [Yet another introduction to Functional Programming (Part Three)](https://github.com/MarkAdell/my_articles/blob/main/intro_to_functional_programming/series/part_3.md)
 
 ## First-class functions
 
