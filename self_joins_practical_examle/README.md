@@ -2,7 +2,7 @@
 
 ## Problem
 
-In this article, I am going to share a scenario that I recently encountered at work and made use of SQL self joins.
+In this article, I am going to share a scenario that I recently faced at work and made use of SQL self joins.
 
 Our company operates a food ordering app. We noticed that some customers add items to their basket, and for one or more hours, do not proceed to create an order. To address this, we decided to send these customers a push notification to encourage them to complete the ordering process. And that was my task. In this article, we will focus on how to retrieve these customers.
 
