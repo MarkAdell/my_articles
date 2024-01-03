@@ -62,7 +62,7 @@ WHERE
 
 To the untrained eye, this query might look intimidating, but it's actually quite simple. Let's break it down.
 
-We performed a LEFT JOIN on the `customer_events` table (a) with itself (b). This retrieves all rows from the left table (a) along with their matching rows from the right table (b) based on the specified join conditions. In the right side, all columns will be `NULL` if there are no subsequent `'created_order'` event for the customer on the left side, and will have values otherwise. We use the `b.customer_id IS NULL` condition to only get customers where there are no subsequent `'created_order'` event.
+We performed a `LEFT JOIN` on the `customer_events` table (a) with itself (b). This retrieves all rows from the left table (a) along with their matching rows from the right table (b) based on the specified join conditions. In the right side, all columns will be `NULL` if there are no subsequent `'created_order'` event for the customer on the left side, and will have values otherwise. We use the `b.customer_id IS NULL` condition to only get customers where there are no subsequent `'created_order'` event.
 
 Query Output:
 
