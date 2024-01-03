@@ -28,7 +28,7 @@ We have events from 5 customers. Only the `customer_id` of `40` added items to t
 
 Before writing non-straightforward SQL queries, I like to use plain text to describe exactly what I want to achieve, in a way that would help me translate that into the query. Let's see what I would write for our case:
 
-"I want to retrieve customer IDs that their `event_type` is `'added_items_to_basket'` and their `event_timestamp` is one or more hours ago, excluding those for whom there exists a row with the same `customer_id` and `event_name` = `'created_order'` and a greater `event_timestamp`"
+"I want to retrieve customer IDs that their `event_type` = `'added_items_to_basket'` and their `event_timestamp` is one or more hours ago, excluding those for whom there exists a row with the same `customer_id` and `event_name` = `'created_order'` and a greater `event_timestamp`"
 
 Let's start with the easy part of the query, which is selecting all customers who added items to their basket at least one hour ago:
 
