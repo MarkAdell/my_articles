@@ -39,7 +39,7 @@ FROM
     customer_events
 WHERE
     event_type = 'added_items_to_basket'
-    AND EXTRACT(HOUR FROM (NOW() - event_timestamp)) >= 1;
+    AND (EXTRACT(EPOCH FROM (NOW() - '2024-01-03 16:30:00')) / 3600) >= 1;
 ```
 
 Now, let's update the query to exclude those customers who created an order after they added items to the basket. We can do this using self joins:
@@ -56,7 +56,7 @@ LEFT JOIN
     AND b.event_timestamp > a.event_timestamp
 WHERE
     a.event_type = 'added_items_to_basket'
-    AND EXTRACT(HOUR FROM (NOW() - a.event_timestamp)) >= 1
+    AND (EXTRACT(EPOCH FROM (NOW() - '2024-01-03 16:30:00')) / 3600) >= 1
     AND b.customer_id IS NULL;
 ```
 
@@ -89,7 +89,7 @@ FROM
     customer_events a
 WHERE
     a.event_type = 'added_items_to_basket'
-    AND EXTRACT(HOUR FROM (NOW() - a.event_timestamp)) >= 1
+    AND (EXTRACT(EPOCH FROM (NOW() - '2024-01-03 16:30:00')) / 3600) >= 1
     AND NOT EXISTS (
         SELECT 1
         FROM customer_events b
