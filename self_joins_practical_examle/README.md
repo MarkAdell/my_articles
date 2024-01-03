@@ -72,7 +72,7 @@ Query Output:
 | 50 |
 | 60 |
 
-If you are not sure what the output of the self join looks like before filtering using `b.customer_id IS NULL`, you may run [this](https://www.db-fiddle.com/f/wtS6yTrzRXp9dbfgfRBQcn/0) example I prepared on [db-fiddle](https://www.db-fiddle.com/).
+If you are not sure what the output of the self join looks like before filtering using `b.customer_id IS NULL`, you may run [this](https://www.db-fiddle.com/f/wtS6yTrzRXp9dbfgfRBQcn/1) example I prepared on [db-fiddle](https://www.db-fiddle.com/).
 
 It is worth noting that this is a simplified version of the actual query. There are other cases that we need to handle, such as ensuring that the order belongs to the specified basket, or only taking the last event into account. But this is beyond the scope of this article.
 
