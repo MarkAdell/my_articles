@@ -74,13 +74,13 @@ Query Output:
 
 If you are not sure what the output of the self join looks like before filtering using `b.customer_id IS NULL`, you may run [this](https://www.db-fiddle.com/f/wtS6yTrzRXp9dbfgfRBQcn/1) example I prepared on [db-fiddle](https://www.db-fiddle.com/).
 
-It is worth noting that this is a simplified version of the actual query. There are other cases that we need to handle, such as ensuring that the order belongs to the specified basket, or only taking the last event into account. But this is beyond the scope of this article.
+It is worth noting that this is a simplified version of the actual query. There are other cases that we need to handle, such as ensuring that the order belongs to the specified basket, or only taking the last event into account. However, this is beyond the scope of this article.
 
 Now, I want you to go back and read the plain text we wrote for this query, and then check the query again. You will find that it does exactly what we described.
 
 ## Another Approach
 
-There is an alternative way we can write this query to achieve the same result, using sub-queries. Let's see how:
+There is an alternative way we can write this query to achieve the same result, using sub-queries:
 
 ```sql
 SELECT
