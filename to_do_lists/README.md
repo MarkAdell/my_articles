@@ -122,6 +122,6 @@ I like playing blitz chess (3 minutes time format). Chess used to steal a good p
 
 ## Conclusion
 
-This concludes the end of this article. Please note that everything I have written is based on my own experience, and what works for me might not work for you. I hope I have given you some ideas on how to use your to-do lists effectively, or inspired you to start using them if you have not already.
+This concludes the end of this article. Please note that everything I have written is based on my own experience, and what works for me might not work for you. I hope I have given you some ideas on how to use your to-do lists effectively, or inspired you to start using them if you haven't already.
 
 I might come back to update this article as I learn new things, so keep an eye out for it!
