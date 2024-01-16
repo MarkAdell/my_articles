@@ -1,26 +1,26 @@
 # To-Do Lists for the Rescue
 
-In this article, I am going to share my personal experience about the benefits of using to-do lists and share some tips that I formulated over time which helped me use my to-do lists effectively.
+In this article, I'm going to share my personal experience about the benefits of using to-do lists and share some tips that I formulated over time which helped me use my to-do lists effectively.
 
-I am aware that there are countless resources throughout the internet on topics related to to-do lists, and time management in general. However, I believe that sharing personal experiences always adds new perspectives. I did not do any research before or during writing this article, because I want to guarantee that everything I write here is based on my own experience.
+I'm aware that there are countless resources throughout the internet on topics related to to-do lists, and time management in general. However, I believe that sharing personal experiences always adds new perspectives. I didn't do any research before or during writing this article, because I want to guarantee that everything I write here is based on my own experience.
 
 ## Why should we use to-do lists?
 
 My life before using to-do lists has been very messy. To-do lists helped me bring more order to my life, be more productive, overcome procrastination, start achieving my goals, and more.
 
-Let's talk about the benefits of using to-do lists and why relying on our brains is not a good idea.
+Let's talk about the benefits of using to-do lists and why relying on our brains isn't a good idea.
 
 ### Our brains are unreliable
 
 #### Limited Memory
 
-You can barely use your memory to remember today's tasks, and even for that it sometimes fails you and drops things. Then for instance, how about if you want to keep track of tasks that need to be done in the short/long term? This list can become long and relying on your memory will be unpractical.
+You can barely use your memory to remember today's tasks, and even for that it sometimes fails you and drops things. Then, for instance, how about if you want to keep track of tasks that need to be done in the short/long term? This list can become long and relying on your memory will be unpractical.
 
-By using to-do lists, you do not need to use your memory at all.
+By using to-do lists, you don't need to use your memory at all.
 
 #### Overwhelm
 
-Even if you manage to keep all the tasks in your memory, you will probably get overwhelmed by their amount, the size of each task, and the fact that you do not have a clear idea about their priorities or the order in which you should execute them. So you likely end up doing nothing.
+Even if you manage to keep all the tasks in your memory, you will probably get overwhelmed by their amount, the size of each task, and the fact that you don't have a clear idea about their priorities or the order in which you should execute them. So you likely end up doing nothing.
 
 By using to-do lists, you can organize the tasks in multiple lists, set their priorities and their order, and break down big tasks into smaller manageable ones. All this eliminates the possibility of getting overwhelmed.
 
@@ -36,7 +36,7 @@ A to-do list adds structure to your day. You are always able to answer the quest
 
 ### They encourage you to set goals
 
-I did not have my short or long-term goals written anywhere before. After I started using to-do lists, this encouraged me to start writing down my goals and breaking them down into actions. I make sure that my daily to-do list contains at least one or two tasks that contribute to my goals.
+I didn't have my short or long-term goals written anywhere before. After I started using to-do lists, this encouraged me to start writing down my goals and breaking them down into actions. I make sure that my daily to-do list contains at least one or two tasks that contribute to my goals.
 
 ### They help you set priorities
 
@@ -46,9 +46,9 @@ By having all the tasks clearly written in front of you, it becomes more easy to
 
 ## How to structure the to-do lists
 
-It is important to understand that there is no right, wrong, or even recommended way of structuring your to-do lists. You can structure them in any way you like, as long as they are effective and achieve the benefits we mentioned in the previous section.
+It's important to understand that there is no right, wrong, or even recommended way of structuring your to-do lists. You can structure them in any way you like, as long as they are effective and achieve the benefits we mentioned in the previous section.
 
-I am going to share two of the lists that I use, which I believe will be common to all of us, as they are the ones that we use on a daily basis: Daily to-do list and Pool of to-dos".
+I'm going to share two of the lists that I use, which I believe will be common to all of us, as they are the ones that we use on a daily basis: Daily to-do list and Pool of to-dos".
 
 Other lists that you may consider having, just to give you an idea: Goals for Q1 2024, Shopping list, Places to visit, Future tasks (tasks that you don't need to do right now, but you don't want to forget), and more.
 
@@ -92,7 +92,7 @@ Order your tasks based on their importance. In the case of equally important tas
 
 By doing this, you ensure that you will complete the important tasks each day.
 
-Please note that it is important to order your pool of to-dos too.
+Please note that it's important to order your pool of to-dos too.
 
 ### Be realistic
 
@@ -104,17 +104,17 @@ If for some reason you did not finish all of yesterday's tasks, consider startin
 
 If an unfinished task remained on your daily to-do list for more than two days, consider moving it back to the pool of to-dos, and only move it to your daily to-do list when you are ready to complete it.
 
-### Ensure that tasks on your pool of to-dos do not rot
+### Ensure that tasks on your pool of to-dos don't rot
 
 Some tasks on your pool of to-dos may remain there for many days or even weeks. It might be a bit tricky to handle this. What I do is, from time to time, I go over my pool of to-dos and try to include one or two of these tasks in my daily to-do list, even though they may not be of very high priority.
 
 ### Set deadlines
 
-I do not have the need to set deadlines for my daily to-do list tasks, but you may find it beneficial, it depends on your work style and the nature of the tasks at hand.
+I don't have the need to set deadlines for my daily to-do list tasks, but you may find it beneficial, it depends on your work style and the nature of the tasks at hand.
 
 ### Keep it clean
 
-I like to write the tasks in correct language, with no spelling or grammar mistakes. The only time I violate this is when I need to quickly add a task to my pool of to-dos while I am in the middle of doing something else. I would fix the language later.
+I like to write the tasks in correct language, with no spelling or grammar mistakes. The only time I violate this is when I need to quickly add a task to my pool of to-dos while I'm in the middle of doing something else. I would fix the language later.
 
 ### Include playing too
 
