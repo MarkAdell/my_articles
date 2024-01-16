@@ -1,4 +1,4 @@
-# Yet another introduction to Functional Programming (Part Five)
+# Yet Another Introduction to Functional Programming (Part Five)
 
 Welcome to the fifth and final part of our series of articles on Functional Programming. In the previous part, we discussed First-class functions and Higher-order functions. In this part, we will show how we can utilize all the functional programming concepts that we covered within object-oriented programming code.
 

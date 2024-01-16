@@ -1,4 +1,4 @@
-# Yet another introduction to Functional Programming
+# Yet Another Introduction to Functional Programming
 
 In this article, we will explore the fundamental principles of functional programming that you can utilize in your day-to-day work, regardless of the programming language you use.
 

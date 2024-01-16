@@ -1,4 +1,4 @@
-# Yet another introduction to Functional Programming (Part Four)
+# Yet Another Introduction to Functional Programming (Part Four)
 
 Welcome to the fourth part of our series of articles on Functional Programming. In the previous part, we discussed Immutability. In this part, we will explore First-class functions and Higher-order functions.
 

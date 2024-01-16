@@ -1,4 +1,4 @@
-# Yet another introduction to Functional Programming (Part Three)
+# Yet Another Introduction to Functional Programming (Part Three)
 
 Welcome to the third part of our series of articles on Functional Programming. In the previous part, we discussed pure functions. In this part, we will explore Immutability.
 
