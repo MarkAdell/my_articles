@@ -12,9 +12,9 @@ Let's discuss the benefits of using to-do lists and why relying on our brains is
 
 ### Our brains are unreliable
 
-#### Limited Memory
+#### Limited memory
 
-You can barely use your memory to remember today's tasks, and even for that it sometimes fails you and forgets things. Then, for instance, how about if you want to keep track of tasks that need to be done in the short/long term? This list can grow long and relying on your memory becomes impractical.
+You can barely use your memory to remember today's tasks, and even for that it sometimes fails you and forgets things. Then, how about if you want to keep track of tasks that need to be done in the short or long term? This list can grow long, and relying on your memory becomes impractical.
 
 By using to-do lists, there is no need to use your memory.
 
