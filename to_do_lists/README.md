@@ -44,7 +44,7 @@ By having all the tasks clearly written in front of you, it becomes more feasibl
 
 **Tip**: Not all tasks that seem important are important. Always ask yourself whether these tasks, especially big ones, contribute to one of your current goals. If not, they are probably not due now, and there are more important ones that directly impact your goals.
 
-## How to structure the to-do lists
+## How to structure to-do lists
 
 There is no right, wrong, or even recommended way to structure your to-do lists. You can structure them in any way you like, as long as they are effective and achieve the benefits we discussed in the previous section.
 
