@@ -8,21 +8,21 @@ I'm aware that there are countless resources over the internet on topics related
 
 My life before using to-do lists has been very messy. To-do lists helped me bring more order to my life, be more productive, overcome procrastination, start achieving my goals, and more.
 
-Let's discuss the benefits of using to-do lists and why relying on our brains isn't a good idea.
+Let's discuss the benefits of using to-do lists and why relying on our brains is not a good idea.
 
 ### Our brains are unreliable
 
 #### Limited memory
 
-You can barely use your memory to remember today's tasks, and even for that it sometimes fails you and forgets things. Then, how about if you want to keep track of tasks that need to be done in the short or long term? This list can grow long, and relying on your memory becomes impractical.
+You can barely use your memory to remember today's tasks, and even for that it sometimes fails you and forgets things. How about if you want to keep track of short or long term tasks? This list can grow long, and relying on your memory becomes impractical.
 
 By using to-do lists, there is no need to use your memory.
 
 #### Overwhelm
 
-Even if you manage to keep all the tasks in your memory, you will probably get overwhelmed by their amount, the size of each task, and the fact that you don't have a clear idea about their priorities or the order they should be executed. So you likely end up doing nothing.
+Even if you manage to keep all the tasks in your memory, you will probably get overwhelmed by their amount, the size of each task, and the lack of clarity regarding their priorities or the order in which they should be executed. So you likely end up doing nothing.
 
-By using to-do lists, you can organize the tasks in multiple lists, set their priorities and their order, and break down big tasks into smaller manageable ones. Doing this eliminates the possibility of getting overwhelmed.
+By using to-do lists, you can organize the tasks in multiple lists, set their priorities and their order, and break down big tasks into smaller ones. Doing this eliminates the possibility of getting overwhelmed.
 
 ### They motivate you to get things done
 
@@ -32,7 +32,7 @@ After filling out my daily to-do list, I find that I become motivated to start w
 
 Without using a to-do list, your day becomes subject to being very messy, since nothing stops you from doing anything at any time. So, you either end up wasting a lot of your time, like scrolling indefinitely in social media apps, playing video games, etc., or you find something to do that you think is important, just to not feel guilty for wasting your entire day.
 
-A to-do list adds structure to your day. You are always able to answer the question, "What should I be doing right now?" All you need to do is consult your to-do list, which should have today's tasks ordered by their priority. While this doesn’t stop you from wasting time, wasting time now becomes a conscious choice, rather than a result of an unplanned day, making you less likely to waste significant amounts of time.
+A to-do list adds structure to your day. You are always able to answer the question, "What should I be doing right now?" All you need to do is consult your to-do list, which should have today's tasks ordered by their priority. While this doesn't stop you from wasting time, wasting time now becomes a conscious choice, rather than a result of an unplanned day, making you less likely to waste significant amounts of time.
 
 ### They encourage you to set goals
 
@@ -48,19 +48,19 @@ By having all the tasks clearly written in front of you, it becomes more feasibl
 
 There is no right, wrong, or even recommended way to structure your to-do lists. You can structure them in any way you like, as long as they are effective and achieve the benefits we discussed in the previous section.
 
-I'm going to share two of the lists that I use, which I believe will be common to all of us, as they are the ones that we use on a daily basis: "Daily to-do list" and "Pool of to-dos".
+I'm going to share two of the lists that I use, which I believe everyone can make use of, as these are the ones we use in our day-to-day lives: "Daily to-do list" and "Pool of to-dos".
 
 Other lists that you may consider having, just to give you an idea: Goals for Q1 2024, Shopping list, Places to visit, Future tasks (tasks not immediately necessary but you don't want to forget), and more.
 
-Let's talk more about the Daily to-do list and the Pool of to-dos.
+Let's explore the Daily to-do list and the Pool of to-dos.
 
 ### 1. Daily to-do list
 
-We are all familiar with this one. This list contains tasks to be completed on a particular day. It should be filled at the beginning of the day and updated as necessary throughout this day.
+We are all familiar with this one. This list contains tasks to be completed within a specific day. It should be prepared at the start of the day and updated as necessary throughout the day.
 
 ### 2. Pool of to-dos
 
-This list is used for tasks that are ready to be executed but you can't squeeze them all in your today's to-dos. It serves as a pool of tasks waiting for their turn to be moved to the Daily to-do list when the time is right.
+This list is used for tasks that are ready to be executed, but can't all be squeezed into today's to-dos. It serves as a pool of tasks waiting for their turn to be moved to the Daily to-do list when the time is right.
 
 Whenever a task of this nature comes up, drop it to your pool of to-dos.
 
@@ -80,7 +80,7 @@ Ensure that the place where you keep your to-do lists is no more than two clicks
 
 Ensure that each task takes no longer than two hours to complete unless there are specific exceptions.
 
-Big tasks should be broken down into smaller, more manageable tasks. 
+Big tasks should be broken down into smaller, more manageable ones. 
 
 Having big tasks on your list can lead to feeling overwhelmed, which increases the likelihood to procrastinate. Additionally, keeping your tasks small allows you to work on multiple items each day.
 
@@ -88,23 +88,23 @@ Writing this article was a big task on my daily to-do list. It wasn't necessary 
 
 ### Prioritize your tasks
 
-Order your tasks based on their importance. In the case of equally important tasks, I usually start with the more annoying ones. By doing this, you ensure that you will complete the important tasks each day.
+Order your tasks based on their priority. In the case of equally important tasks, I usually start with the more annoying ones. By doing this, you ensure that you will complete the important tasks each day.
 
-Please note that it's important to order your pool of to-dos too.
+Please note that it's important to prioritize tasks on your pool of to-dos too.
 
 ### Be realistic
 
-When filling your Daily to-do list, avoid adding more tasks than you can complete, considering your available time and energy for the day.
+When filling your Daily to-do list, avoid adding more tasks than you can complete, considering your energy and available time for the day.
 
 ### Start with yesterday's leftovers
 
-If for some reason you didn't complete all of yesterday's tasks, consider starting with the uncompleted ones. This prevents the same task from remaining on your daily to-do list for multiple days.
+If for some reason you didn't complete all of yesterday's tasks, consider starting with the uncompleted ones. This prevents uncompleted tasks from lingering on your daily to-do list for multiple days.
 
-If an uncompleted task remains on your daily to-do list for more than two days, consider moving it back to the pool of to-dos, and only move it to your daily to-do list when you are ready to complete it.
+If an uncompleted task stays in your daily to-do list for more than two days, consider moving it back to the pool of to-dos, and only move it to your daily to-do list when you are ready to complete it.
 
-### Ensure that tasks on your pool of to-dos don't rot
+### Ensure that tasks on your pool of to-dos do not rot
 
-Some tasks on your pool of to-dos may remain there for many days or even weeks. It's a bit tricky to handle this problem. What I do is, from time to time, I go over my pool of to-dos and try to include one or two of these tasks in my daily to-do list, regardless of their priority.
+Some tasks may stay in your pool of to-dos for many days or even weeks. To handle this problem, from time to time, I go over my pool of to-dos and try to include one or two of these tasks in my daily to-do list, regardless of their priority.
 
 ### Set deadlines
 
@@ -112,11 +112,11 @@ I don't have the need to set deadlines for my daily to-do list tasks, but you ma
 
 ### Keep it clean
 
-I prefer to write tasks in correct language, without spelling or grammar mistakes. The only time I violate this is when I need to quickly add a task to my pool of to-dos while I'm in the middle of doing something else. I would fix the language later.
+I prefer to use correct language when writing the tasks, avoiding spelling or grammar mistakes. The only time I violate this is when I need to drop a task into my pool of to-dos while I'm in the middle of doing something else. I would fix the language later.
 
 ### Include playing too
 
-I like playing blitz chess (3 minutes time format). Chess used to consume a good portion of my free time. After I started using to-do lists, I decided to include chess in my daily tasks. I would add two or three tasks labeled "Play 2 chess games" to my daily to-do list. This not only acted as a motivation to complete the previous tasks to get to each playing task, but it also helped limit the duration of each session of playing chess. Previously, nothing prevented me from playing over 15 back-to-back games.
+I like playing blitz chess (3 minutes time format). Chess used to consume a good portion of my free time. After I started using to-do lists, I decided to include chess in my daily tasks. I would add two or three tasks labeled "Play 2 chess games" to my daily to-do list. This not only acted as a motivation to complete the preceding tasks to get to each playing task, but it also helped limit the number of games I play. Previously, nothing prevented me from playing over 15 back-to-back games each time I started to play.
 
 ## Conclusion
 
