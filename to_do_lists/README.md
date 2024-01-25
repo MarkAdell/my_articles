@@ -108,7 +108,7 @@ Some tasks may stay in your pool of to-dos for many days or even weeks. To handl
 
 ### Set deadlines
 
-I don't have the need to set deadlines for my daily to-do list tasks, but you may find it beneficial, it depends on your work style and the nature of the tasks at hand.
+I don't have the need to set deadlines for my daily to-do list tasks, but you may find it beneficial. It depends on your work style and the nature of the tasks at hand.
 
 ### Keep it clean
 
@@ -120,6 +120,6 @@ I like playing blitz chess (3 minutes time format). Chess used to consume a good
 
 ## Conclusion
 
-This concludes the end of this article. Please note that everything written is based on my own experience, what works for me might not necessarily work for you. I hope I have given you ideas on how to use your to-do lists effectively, or inspired you to start using them if you haven't already.
+This concludes the end of this article. Please note that everything written is based on my own experience. What works for me might not necessarily work for you. I hope I have given you ideas on how to use your to-do lists effectively, or inspired you to start using them if you haven't already.
 
 I may update this article as I learn new things, so keep an eye out for it!
