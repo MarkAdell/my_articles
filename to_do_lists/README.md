@@ -106,6 +106,10 @@ If an uncompleted task stays in your daily to-do list for more than two days, co
 
 Some tasks may stay in your pool of to-dos for many days or even weeks. To handle this problem, from time to time, I go over my pool of to-dos and try to include one or two of these tasks in my daily to-do list, regardless of their priority.
 
+### Don't sacrifice sleep
+
+Don't stay up because you still have unfinished tasks. Instead, strive to finish all the tasks on your daily to-do list before your regular bedtime.
+
 ### Set deadlines
 
 I don't have the need to set deadlines for my daily to-do list tasks, but you may find it beneficial. It depends on your work style and the nature of the tasks at hand.
