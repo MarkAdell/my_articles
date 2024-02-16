@@ -8,10 +8,14 @@ Please note that this serves only as a summary or even a cheat sheet. If you are
 
 Read phenomena are potential issues (anomalies) that can occur in a database when multiple transactions are executed concurrently.
 
-- **Dirty Read**: A transaction reads data written by a concurrent uncommitted transaction.
-- **Nonrepeatable Read**: A transaction re-reads data it has previously read and finds that data has been modified by another transaction (that committed since the initial read).
-- **Phantom Read**: A transaction re-executes a query returning a set of rows that satisfy a search condition and finds that the set of rows satisfying the condition has changed due to another recently-committed transaction.
-- **Serialization Anomaly**: The result of successfully committing a group of transactions is inconsistent with all possible orderings of running those transactions one at a time.
+- **Dirty Read**: A transaction reads data written by another concurrent uncommitted transaction.
+    - It's like reading a draft that someone else is still writing.
+- **Nonrepeatable Read**: A transaction re-reads columns it has previously read and finds that the values of those columns have been modified due to another concurrent committed transaction.
+    - It's like re-reading a page of a book and finding that the words have changed since your first read.
+- **Phantom Read**: A transaction re-reads a set of rows satisfying a specific search criteria and finds newly added or removed rows due to another concurrent committed transaction.
+    - It's like counting a group of people, then finding the number changes when you count again because new people have left or joined.
+- **Serialization Anomaly**: The state of data resulting from executing transactions concurrently can be different from the state resulting from running them one at a time.
+    - It's like when you are baking a cake, it might taste differently if you added all the ingredients at the same time than if you added them one at a time in a specific order.
 
 ## Isolation levels
 
@@ -24,7 +28,7 @@ Isolation levels determine how transactions influence each other.
 - **Phantom Read**: Possible.
 - **Serialization Anomaly**: Possible.
 
-`READ UNCOMMITTED` is treated as `READ COMMITTED` in PostgreSQL.
+`READ UNCOMMITTED` behaves the same as `READ COMMITTED` in PostgreSQL.
 
 ### `Read Committed`
 
@@ -63,13 +67,13 @@ Locking is a mechanism that prevents concurrent transactions from interfering wi
 
 One of the primary use cases for locking is to prevent anomalies such as the **Lost Update**, which can occur in lower isolation levels such as `READ COMMITTED`.
 
-The **Lost Update** anomaly occurs when two transactions attempt to update the same data concurrently, and the changes made by one transaction are overwritten by the other, resulting in the loss of the first transaction's updates.
+The **Lost Update** anomaly occurs when two transactions attempt to update the same data concurrently, and the changes made by one transaction are overwritten by the other, resulting in the loss of the first transaction updates.
 
 There are two common approaches to locking: pessimistic locking and optimistic locking.
 
 ### Pessimistic Locking
 
-Pessimistic locking assumes that conflicts will happen and so it prevents them by acquiring locks on the data. This means that a transaction will block other concurrent transactions from accessing the same data until it's done. There are two types of pessimistic locks: Shared lock and Exclusive lock.
+Pessimistic locking assumes that conflicts will happen and so it prevents them by acquiring locks on the data. This means that a transaction will block other concurrent transactions from accessing the same data until it completes. There are two types of pessimistic locks: Shared lock and Exclusive lock.
 
 **Shared Lock:** A shared lock allows multiple transactions to read the same data concurrently but prevents them from updating it.
 
@@ -89,30 +93,30 @@ UPDATE products SET price = 10 WHERE id = 1;
 COMMIT;
 ```
 
-Please note that normal `SELECT` statements under an isolation level like `READ COMMITTED` will not be blocked by a `SELECT FOR UPDATE` or any other locking modes, as normal `SELECT` statements don't acquire any locks on the rows they read, so they don't cause any conflicts with other transactions.
+Please note that normal `SELECT` statements under an isolation level like `READ COMMITTED` will not be blocked by a `SELECT FOR UPDATE` or any other locking mode, as normal `SELECT` statements don't acquire any locks on the rows they read, so they don't cause any conflicts with other transactions.
 
 #### Lock modes ordered by restrictiveness from highest to lowest:
 
 - **`SELECT .. FOR UPDATE` (exclusive lock)**
     - Blocks concurrent transactions on the same rows from performing `SELECT FOR UPDATE`, `SELECT FOR NO KEY UPDATE`, `SELECT FOR SHARE`, `SELECT FOR KEY SHARE`, `UPDATE`, and `DELETE`.
-    - This is the mode implicitly used for `DELETE` commands and `UPDATE` commands on columns with unique indexes.
+    - This is the mode implicitly used for `DELETE` commands, and `UPDATE` commands on columns with unique indexes.
     - Use when you want to prevent other transactions from modifying or acquiring any type of lock on the selected rows.
 - **`SELECT .. FOR NO KEY UPDATE` (shared lock)**
     - Blocks concurrent transactions on the same rows from performing `SELECT FOR UPDATE`, `SELECT FOR NO KEY UPDATE`, `SELECT FOR SHARE`, `DELETE`, and any `UPDATE` that changes key values (such as primary keys).
     - This is the mode implicitly used for `UPDATE` commands that don't acquire a `FOR UPDATE` lock.
-    - Use when you want to lock selected rows against concurrent updates that change key values or exclusive locks, while allowing other transactions to acquire SELECT FOR KEY SHARE locks.
+    - Use when you want to lock selected rows against concurrent updates that change key values and from exclusive locks, while allowing other transactions to acquire `SELECT FOR KEY SHARE` locks.
 - **`SELECT .. FOR SHARE` (shared lock)**
     - Blocks concurrent transactions on the same rows from performing `SELECT FOR UPDATE`, `SELECT FOR NO KEY UPDATE`, `UPDATE`, and `DELETE`.
-    - Use when you want to lock selected rows against all concurrent updates or exclusive locks, while allowing other transactions to acquire `SELECT FOR SHARE` or `SELECT FOR KEY SHARE` locks.
+    - Use when you want to lock selected rows against all concurrent updates and from exclusive locks, while allowing other transactions to acquire `SELECT FOR SHARE` or `SELECT FOR KEY SHARE` locks.
 - **`SELECT .. FOR KEY SHARE` (shared lock)** 
     - Blocks concurrent transactions on the same rows from performing `SELECT FOR UPDATE`, `DELETE`, and any `UPDATE` that changes key values (such as primary keys).
-    - Use when you want to lock selected rows against concurrent updates that change key values or exclusive locks, while allowing other transactions to acquire any type of shared lock.
+    - Use when you want to lock selected rows against concurrent updates that change key values and from exclusive locks, while allowing other transactions to acquire any type of shared lock.
     
 #### Deadlocks
 
 A deadlock happens when two or more transactions are waiting for each other to release locks. PostgreSQL periodically checks for deadlocks and handles them.
 
-If a lock isn't released within the configurable parameter `deadlock_timeout` (default is 1 second), PostgreSQL will trigger the deadlock detection algorithm and if a deadlock was found, one of the involved transactions is rolled back.
+If a lock isn't released within the configurable parameter `deadlock_timeout` (default is 1 second), PostgreSQL will trigger the deadlock detection algorithm and if a deadlock was found, one of the involved transactions will be rolled back.
 
 ### Optimistic Locking
 
