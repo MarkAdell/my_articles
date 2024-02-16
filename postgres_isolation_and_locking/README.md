@@ -4,7 +4,7 @@ I initially prepared this summary for my myself. However, I thought other people
 
 Please note that this serves only as a summary or even a cheat sheet. If you are new to these topics, it's advisable to do further reading.
 
-## Read phenomena
+## Read Phenomena
 
 Read phenomena are potential issues (anomalies) that can occur in a database when multiple transactions are executed concurrently.
 
@@ -17,7 +17,7 @@ Read phenomena are potential issues (anomalies) that can occur in a database whe
 - **Serialization Anomaly**: The state of data resulting from executing transactions concurrently can be different from the state resulting from running them one at a time.
     - It's like when you are baking a cake, it might taste differently if you added all the ingredients at the same time than if you added them one at a time in a specific order.
 
-## Isolation levels
+## Isolation Levels
 
 Isolation levels determine how transactions influence each other.
 
@@ -154,6 +154,6 @@ If no rows are updated, it means another transaction has already updated the row
 
 I hope you found this summary helpful. Please let me know if you discovered any errors or have any suggestions on what to add or update, while still keeping it concise.
 
-## Further reading
+## Further Reading
 
 [PostgreSQL documentation](https://www.postgresql.org/docs/current/mvcc.html)
