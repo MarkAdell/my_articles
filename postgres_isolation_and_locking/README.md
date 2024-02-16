@@ -2,7 +2,7 @@
 
 I initially prepared this summary for my myself. However, I thought other people would find it useful, so I refined it as necessary and decided to share it.
 
-Please note that this serves only as a summary or even a cheat sheet. If you are new to these topics, you should start with a more detailed guide.
+Please note that this serves only as a summary or even a cheat sheet. If you are new to these topics, it's advisable to do further reading.
 
 ## Read phenomena
 
@@ -152,8 +152,8 @@ If no rows are updated, it means another transaction has already updated the row
 
 ## Conclusion
 
-I hope you find this summary helpful. Please let me know if you discovered any errors or have any suggestions on what to add or update, while still keeping it concise.
+I hope you found this summary helpful. Please let me know if you discovered any errors or have any suggestions on what to add or update, while still keeping it concise.
 
-## References
+## Further reading
 
 [PostgreSQL documentation](https://www.postgresql.org/docs/current/mvcc.html)
