@@ -10,11 +10,11 @@ Read phenomena are potential issues (anomalies) that can occur in a database whe
 
 - **Dirty Read**: A transaction reads data written by another concurrent uncommitted transaction.
     - It's like reading a draft that someone else is still writing.
-- **Nonrepeatable Read**: A transaction re-reads columns it has previously read and finds that the values of those columns have been modified due to another concurrent committed transaction.
+- **Nonrepeatable Read**: A transaction re-reads columns and finds that their values have been changed due to another concurrently committed transaction.
     - It's like re-reading a page of a book and finding that the words have changed since your first read.
-- **Phantom Read**: A transaction re-reads a set of rows satisfying a specific search criteria and finds newly added or removed rows due to another concurrent committed transaction.
+- **Phantom Read**: A transaction re-reads a set of rows satisfying a specific criteria and finds newly added or removed rows due to another concurrently committed transaction.
     - It's like counting a group of people, then finding the number changes when you count again because new people have left or joined.
-- **Serialization Anomaly**: The state of data resulting from executing transactions concurrently can be different from the state resulting from running them one at a time.
+- **Serialization Anomaly**: The state of data resulting from executing transactions concurrently differs from the state resulting from running them one at a time.
     - It's like when you are baking a cake, it might taste differently if you added all the ingredients at the same time than if you added them one at a time in a specific order.
 
 ## Isolation Levels
