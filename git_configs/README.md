@@ -1,6 +1,6 @@
 # Useful Global Git Configurations
 
-I am going to share with you six global Git configurations that I find incredibly useful.
+In this post, I am going to share with you six global Git configurations that I use and find incredibly useful.
 
 Global Git configurations are settings that apply to all your local repositories. They are stored in a file called `.gitconfig` in your home directory. You can view and edit this file, or you can use the `git config` command to modify it from the terminal.
 
