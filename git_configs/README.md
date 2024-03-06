@@ -1,4 +1,4 @@
-# Six Useful Global Git Configurations
+# Useful Global Git Configurations
 
 I am going to share with you six global Git configurations that I find incredibly useful.
 
