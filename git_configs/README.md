@@ -26,13 +26,13 @@ WARNING: You called a Git command named 'pusj', which does not exist.
 Run 'push' instead [y/N]?
 ```
 
-To allow git to run corrections automatically, you can use the `help.autoCorrect 1` (runs after 0.1 seconds), `help.autoCorrect 10` (runs after 10 seconds), or `help.autoCorrect immediate` (runs immediately).
+To allow git to run corrections automatically, you can use `help.autoCorrect 1` (runs after 0.1 seconds), `help.autoCorrect 10` (runs after 10 seconds), or `help.autoCorrect immediate` (runs immediately).
 
 I prefer using `help.autoCorrect prompt` to ensure that I will run the command that I intend to.
 
 ### 3. `git config --global branch.sort -committerdate`
 
-This makes `git branch` sort the branches by the most recently used branches instead of alphabetically. It helps you to quickly find the branches that you are working on.
+This makes `git branch` sort the branches by the most recently used branches instead of alphabetically. This helps you to quickly find the branches that you are working on.
 
 ### 4. `git config --global fetch.prune true`
 
@@ -42,7 +42,7 @@ When you run `git fetch`, any branches that have been deleted on the remote repo
 
 When you run `git log`, dates will be displayed in ISO format for better readability.
 
-For example, `Sun Mar 16 05:30:02 2024` will be displayed as `2024-03-16 05:30:02`.
+For example, `Sun Mar 16 05:30:02 2024` instead of `2024-03-16 05:30:02`.
 
 ### 6. `git config --global push.autoSetupRemote true`
 
