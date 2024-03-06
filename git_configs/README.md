@@ -54,6 +54,6 @@ git push --set-upstream origin <branch-name>
 
 ## Conclusion
 
-I hope you found these Git configurations helpful. Please feel free to share yours!
+I hope you found these configurations helpful. Please feel free to share yours!
 
 You can find more on [Git documentation](https://git-scm.com/docs/git-config).
