@@ -2,6 +2,7 @@
 
 | Date | Title |
 |------|-------|
+30-03-2024 | [Backend Code Review Checklist](https://github.com/MarkAdell/my_articles/blob/main/backend_code_review_checklist/README.md)
 06-03-2024 | [Six Useful Global Git Configurations](https://github.com/MarkAdell/my_articles/blob/main/git_configs/README.md)
 16-02-2024 | [PostgreSQL Isolation Levels and Locking Summary](https://github.com/MarkAdell/my_articles/blob/main/postgres_isolation_and_locking/README.md)
 18-01-2024 | [To-Do Lists for the Rescue](https://github.com/MarkAdell/my_articles/blob/main/to_do_lists/README.md)
