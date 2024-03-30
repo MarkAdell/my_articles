@@ -10,14 +10,14 @@ You can use this checklist as a starting point and customize it to suit your spe
 
 - Verify that the code adheres to the agreed-upon coding style guidelines.
 
+## Code Maintainability
+
+- Verify that the code adheres to the clean code principles (or any other agreed-upon principles).
+
 ## Requirements
 
 - Verify that the code fulfills the specified requirements.
 - Verify that new code doesn't break any existing functionality.
-
-## Code Maintainability
-
-- Verify that the code adheres to the clean code principles (or any other agreed-upon principles).
 
 ## API Design
 
