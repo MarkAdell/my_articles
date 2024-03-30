@@ -21,7 +21,7 @@ You can use this checklist as a starting point and customize it to suit your spe
 
 ## API Design
 
-- Verify that any new APIs follow the agreed-upon API design guidelines.
+- Verify that any new APIs adhere to the agreed-upon API design guidelines.
 
 ## Documentation and Comments
 
