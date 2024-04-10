@@ -1,5 +1,21 @@
 # Introduction to Human Nutrition
 
+## Table Of Contents
+
+- [Introduction](#introduction)
+- [Macronutrients](#macronutrients)
+  - [Carbohydrates](#carbohydrates)
+  - [Proteins](#proteins)
+  - [Fats](#fats)
+- [Micronutrients](#micronutrients)
+  - [Vitamins](#vitamins)
+  - [Minerals](#minerals)
+- [General Tips for a Healthy Diet](#general-tips-for-a-healthy-diet)
+- [How Can You Calculate the Macronutrients You Need per Day?](#how-can-you-calculate-the-macronutrients-you-need-per-day)
+- [How to Read Nutrition Facts](#how-to-read-nutrition-facts)
+
+## Introduction
+
 Our bodies need two types of nutrients: **Macronutrients** (carbohydrates, proteins and fats), which the body needs in large quantities. And **Micronutrients** (vitamins and minerals), which the body needs in smaller quantities.
 
 - **Carbohydrates** are the body's main source of energy.
@@ -9,7 +25,9 @@ Our bodies need two types of nutrients: **Macronutrients** (carbohydrates, prote
 
 ## Macronutrients
 
-### Carbohydrates ([Illustrative Image](https://fspymca.org/wp-content/uploads/2022/03/shutterstock_1797917545.jpg))
+### Carbohydrates 
+
+[Illustrative Image](https://fspymca.org/wp-content/uploads/2022/03/shutterstock_1797917545.jpg)
 
 **Complex Carbs:** They consist of long chains of sugar molecules that take longer for the body to digest. Accordingly, they provide energy to the body gradually and over longer amounts of time. They are also rich in fiber and contain high levels of vitamins and minerals. Complex carbohydrates are found in whole grains such as brown rice, oats, and in legumes.
 
@@ -23,7 +41,9 @@ Simple carbs are also present in natural foods such as fruits and milk. However,
 
 **Animal-Based Proteins:** They are found in white and red meat, fish, eggs, and dairy products. They contain all the essential amino acids and are considered complete proteins. However, they may contain higher amounts of cholesterol and saturated fats.
 
-### Fats ([Illustrative Image](https://images.ctfassets.net/eexbcii1ci83/4NrrGiBSFGP15kYIpzIFFi/25f0b446ff9b024dd096b449d2ec836e/Types_of_Dietary_Fats.png))
+### Fats
+
+[Illustrative Image](https://images.ctfassets.net/eexbcii1ci83/4NrrGiBSFGP15kYIpzIFFi/25f0b446ff9b024dd096b449d2ec836e/Types_of_Dietary_Fats.png)
 
 **Saturated Fats:** It is a type of fat mainly found in animal foods such as red meat, and chicken skin, as well as in dairy products like butter, cream, whole milk, and in certain oils such as palm oil. Saturated fats should not be consumed excessively because they can raise LDL cholesterol levels in the blood (bad cholesterol), increasing the risk of heart disease, so they should be consumed in healthy, moderate amounts.
 
