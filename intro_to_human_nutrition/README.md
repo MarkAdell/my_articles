@@ -14,6 +14,14 @@
 - [How Can You Calculate the Macronutrients You Need per Day?](#how-can-you-calculate-the-macronutrients-you-need-per-day)
 - [How to Read Nutrition Facts](#how-to-read-nutrition-facts)
 
+For the past 8 months, I have been following a diet and exercising in order to lose weight and develop healthy eating habits. I have achieved great results so far and learned many things during this period, especially about human nutrition.
+
+I decided to write this article, which serves as a gentle introduction to human nutrition. It was initially a reference that I prepared for myself, but I quickly realized that other people could make use of it. So I continued improving it and made sure it would be suitable for everyone, regardless of their level of knowledge about this subject. This article provides a solid starting point for you to build upon.
+
+The information in this article is collected from several resources, which I have verified for correctness to the best of my abilities.
+
+Let's get started!
+
 ## Introduction
 
 Our bodies need two types of nutrients: **Macronutrients** (carbohydrates, proteins and fats), which the body needs in large quantities. And **Micronutrients** (vitamins and minerals), which the body needs in smaller quantities.
@@ -131,3 +139,7 @@ Nutrition facts labels provide crucial information about the nutritional content
 - **Ingredients:** This list can tell you a lot about the quality of the food. Ingredients are listed in order of quantity, from highest to lowest. Foods with whole foods (unprocessed or unrefined) listed as the first few ingredients are generally healthier. Be cautious of long lists with unfamiliar or artificial ingredients.
 
 [Here](https://www.nutritionix.com/food/banana) are the nutrition facts of a banana, try to read and understand them.
+
+## Conclusion
+
+Human nutrition is a very dense field. This article merely scratches the surface of all the topics we have covered, but I believe it provides a solid starting point for you to build upon.
