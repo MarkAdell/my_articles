@@ -122,7 +122,7 @@ I prefer to use correct language when writing the tasks, avoiding spelling or gr
 
 I like playing blitz chess (3 minutes time format). Chess used to consume a good portion of my free time. After I started using to-do lists, I decided to include chess in my daily tasks. I would add two or three tasks labeled "Play 2 chess games" to my daily to-do list. This not only acted as a motivation to complete the preceding tasks to get to each playing task, but it also helped limit the number of games I play. Previously, nothing prevented me from playing over 15 back-to-back games each time I started to play.
 
-## Conclusion
+# Conclusion
 
 This concludes the end of this article. Please note that everything written is based on my own experience. What works for me might not necessarily work for you. I hope I have given you ideas on how to use your to-do lists effectively, or inspired you to start using them if you haven't already.
 

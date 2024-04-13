@@ -65,6 +65,6 @@ You can use this checklist as a starting point and customize it to suit your spe
 
 - Verify that the spelling is correct, as this makes the code more searchable.
 
-## Conclusion
+# Conclusion
 
 I hope you found this checklist useful. Please feel free to suggest additional checks that you think are necessary.
