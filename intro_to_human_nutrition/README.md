@@ -74,13 +74,11 @@ Simple carbs are also present in natural foods such as fruits and milk. However,
 
 **Calcium:** An essential mineral found in dairy foods, green leafy vegetables and legumes. Calcium is needed for building and maintaining strong bones and teeth. It is also very important for other physical functions, such as muscle control and blood circulation.
 
-
 **Iron:** An essential mineral found in foods such as red meat and white meat, beans and nuts. Iron plays a crucial role in blood oxygen transport, energy production, and immune function.
 
 **Magnesium:** An essential mineral found in foods like nuts, seeds, whole grains, and leafy green vegetables. Magnesium is crucial for various bodily functions, including muscle and nerve function, bone health, energy production and maintaining a healthy heart rhythm.
 
 **Zinc:** An essential mineral found in foods such as red meat and white meat, beans and nuts. Zinc is crucial for various bodily functions, including immune system support, wound healing, cell growth and maintaining healthy skin and vision.
-
 
 **Selenium, copper, manganese and chromium:** They are involved in many other vital processes.
 
