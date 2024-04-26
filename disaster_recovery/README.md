@@ -22,9 +22,9 @@ If you are part of a startup that still doesn't have a DRP, it's important to sp
 Essential steps for implementing disaster recovery:
 - Evaluate potential threats and identify the most critical system components that require protection against disasters.
 - Create a plan that outlines the following:
-    - The necessary actions to protect these components, such as preventative measures and data backups.
-    - The procedures for responding to different types of disasters.
-    - The individuals responsible for executing these procedures.
+    - The necessary actions to protect these components, such as preventative measures and data backups.
+    - The procedures for responding to different types of disasters.
+    - The individuals responsible for executing these procedures.
 - Ensure that everyone understands their role during a disaster and knows how to execute the recovery procedures.
 - Regularly update your backups to minimize the damage caused by data loss during disasters.
 
