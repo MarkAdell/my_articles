@@ -2,7 +2,7 @@
 
 | Date | Title |
 |------|-------|
-11-06-2024 | [Logging Done Right](https://github.com/MarkAdell/my_articles/blob/main/logging_done_right/README.md)
+10-06-2024 | [Logging Done Right](https://github.com/MarkAdell/my_articles/blob/main/logging_done_right/README.md)
 26-04-2024 | [Disaster Recovery](https://github.com/MarkAdell/my_articles/blob/main/disaster_recovery/README.md)
 11-04-2024 | [Introduction to Human Nutrition](https://github.com/MarkAdell/my_articles/blob/main/intro_to_human_nutrition/README.md)
 30-03-2024 | [Backend Code Review Checklist](https://github.com/MarkAdell/my_articles/blob/main/backend_code_review_checklist/README.md)
