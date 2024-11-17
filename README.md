@@ -2,6 +2,7 @@
 
 | Date | Title |
 |------|-------|
+18-11-2024 | [Make It Work, Then Make It Better](https://github.com/MarkAdell/my_articles/blob/main/make_it_work_then_make_it_better/README.md)
 10-06-2024 | [Logging Done Right](https://github.com/MarkAdell/my_articles/blob/main/logging_done_right/README.md)
 26-04-2024 | [Disaster Recovery](https://github.com/MarkAdell/my_articles/blob/main/disaster_recovery/README.md)
 11-04-2024 | [Introduction to Human Nutrition](https://github.com/MarkAdell/my_articles/blob/main/intro_to_human_nutrition/README.md)
