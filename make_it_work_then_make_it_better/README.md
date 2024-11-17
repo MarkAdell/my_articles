@@ -1,10 +1,11 @@
 # Make It Work, Then Make It Better
 
-In software engineering, the principle "Make it work, then make it better" highlights a practical yet disciplined approach to building reliable software. The process begins by focusing on making the code functional and ensuring it meets the requirements. After that, the code is revisited for refactoring and polishing, all before submitting it for review or delivering it to customers.
+In software engineering, the principle "Make it work, then make it better" highlights a practical yet disciplined approach to building reliable software. It consists of two phases: 
 
-The first phase is about (as they say) writing code for computers, where the primary goal is to produce a working solution that produces the expected output. The second phase shifts the focus to humans, refining the code for other developers who will read, use, and maintain it.
+1. The first phase focuses on ensuring the software works as intended, delivering the expected results and meeting the requirements. At this stage, we make the "computer" understand the code.
+2. The second phase shifts the focus to humans, refining the code for your future self and fellow developers who will read, use, and maintain it.
 
-This doesn't mean completely ignoring code quality in the first phase, but if I were to estimate, I'd say it takes about 30% of the focus at this stage, depending on the context.
+This doesn't mean completely ignoring code quality in the first phase, but if I were to estimate, I'd say it should take about 30% of the focus at this stage, depending on the context.
 
 ## Make It Work
 
@@ -42,7 +43,7 @@ Here are some key areas to focus on:
 
 It's very common for the second phase to be ignored altogether, and this is exactly how technical debt accumulates. Be sure to follow both phases while building software, as this **at least** ensures that the software quality will not degrade over time, which, in my experience, is an achievement in itself.
 
-It's worth noting that **this is not only a programming principle**; you can apply it in many aspects of life. In fact, I followed this approach while writing this blog. Here is what I did:
+It's worth mentioning that **this principle isn't limited to programming;** you can apply it to many areas of life. In fact, I used this approach while writing this blog! Here's how it went:
 - I wrote a quick draft. (phase 1)
 - I used chatGPT to do some enhancements and rephrasings. (phase 2)
 - I made several iterations on chatGPT's output to make it simpler and more relevant. (phase 2)
