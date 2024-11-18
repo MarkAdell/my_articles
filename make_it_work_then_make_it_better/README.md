@@ -3,9 +3,9 @@
 In software engineering, the principle "Make it work, then make it better" highlights a practical yet disciplined approach to building high quality software. It consists of two phases: 
 
 1. The first phase focuses on ensuring the software works as intended, delivering the expected results and meeting the requirements. At this stage, we make the "computer" understand the code.
-2. The second phase shifts the focus to humans, refining the code for your future self and fellow developers who will read, use, and maintain it.
+2. The second phase shifts the focus to humans, refactoring the code for your future self and fellow developers who will read, use, and maintain it.
 
-This doesn't mean completely ignoring code quality in the first phase, but if I were to estimate, I'd say it should take about 30% of the focus at this stage, depending on the context.
+This doesn't mean completely ignoring code quality in the first phase. If I were to estimate I would say it should take around 30% of the focus at this stage, varying depending on the context.
 
 Needless to say, phase two should always be completed **before submitting the code for review** or delivering it to customers.
 
