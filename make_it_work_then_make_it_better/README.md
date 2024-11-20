@@ -43,7 +43,7 @@ Here are some key areas to focus on:
 
 "Make it work, then make it better" encourages developers to focus on solving problems pragmatically before striving for perfection. Write the messy first draft, but don't forget to come back and polish it into a masterpiece!
 
-It's very common for the second phase to be ignored altogether, and this is exactly how technical debt accumulates. Be sure to follow both phases while building software, as this **at least** ensures that the software quality will not degrade over time, which in my experience is an achievement in itself.
+It's very common for the second phase to be ignored altogether, and this is exactly how technical debt accumulates. Always make sure to apply the second phase when building software, unless it's a throwaway prototype. This **at least** ensures that the software quality will not degrade over time, which in my experience is an achievement in itself.
 
 It's worth noting that **this principle isn't limited to programming;** you can apply it to many areas of life. In fact, I used this approach while writing this blog! Here's how it went:
 - I wrote a quick draft. (phase 1)
